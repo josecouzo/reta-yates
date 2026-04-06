@@ -80,6 +80,10 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <style>
       /* ── RESET & ROOT ── */
@@ -938,9 +942,10 @@
         transform: translateY(-3px);
       }
       .exp-ico {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
         display: block;
+        color: var(--aqua);
       }
       .exp-card h3 {
         font-family: var(--serif);
@@ -1650,7 +1655,9 @@
       </p>
       <div class="exp-grid">
         <div class="exp-card reveal">
-          <span class="exp-ico">🥂</span>
+          <span class="exp-ico"
+            ><i class="fa-solid fa-champagne-glasses"></i
+          ></span>
           <h3>Celebraciones privadas</h3>
           <p>
             Cumpleaños, despedidas de soltero/a o aniversarios. Bebidas premium
@@ -1659,7 +1666,7 @@
           <span class="exp-tag">Más popular</span>
         </div>
         <div class="exp-card reveal">
-          <span class="exp-ico">🌅</span>
+          <span class="exp-ico"><i class="fa-solid fa-sun"></i></span>
           <h3>Atardecer romántico</h3>
           <p>
             Vino espumoso, carnes frías y el horizonte pintado de naranja. La
@@ -1668,7 +1675,9 @@
           <span class="exp-tag">Desde $5,800 MXN</span>
         </div>
         <div class="exp-card reveal">
-          <span class="exp-ico">🤿</span>
+          <span class="exp-ico"
+            ><i class="fa-solid fa-person-swimming"></i
+          ></span>
           <h3>Isla Mujeres + Snorkel</h3>
           <p>
             Navega a Playa Norte, bucea en el barco hundido y descubre los
@@ -1677,7 +1686,7 @@
           <span class="exp-tag">Todo incluido</span>
         </div>
         <div class="exp-card reveal">
-          <span class="exp-ico">👨‍👩‍👧‍👦</span>
+          <span class="exp-ico"><i class="fa-solid fa-people-group"></i></span>
           <h3>Día familiar en el mar</h3>
           <p>
             Hasta 50 personas con paddle board, snorkel, música y comida. El
@@ -1686,7 +1695,7 @@
           <span class="exp-tag">Grupos grandes</span>
         </div>
         <div class="exp-card reveal">
-          <span class="exp-ico">💼</span>
+          <span class="exp-ico"><i class="fa-solid fa-briefcase"></i></span>
           <h3>Eventos corporativos</h3>
           <p>
             Team building o reunión ejecutiva sobre el Caribe. Impresiona a
@@ -1695,7 +1704,7 @@
           <span class="exp-tag">Personalizado</span>
         </div>
         <div class="exp-card reveal">
-          <span class="exp-ico">🎣</span>
+          <span class="exp-ico"><i class="fa-solid fa-fish"></i></span>
           <h3>Pesca deportiva</h3>
           <p>
             Equipo profesional y capitán experto en las mejores aguas del
@@ -2314,7 +2323,7 @@
             ? `<meta itemprop="priceCurrency" content="MXN">`
             : "";
         const hotBadge = isFirst
-          ? `<div class="card-hot">⭐ Más popular</div>`
+          ? `<div class="card-hot"><i class="fa-solid fa-star"></i> Más popular</div>`
           : "";
 
         return `<article class="yacht-card reveal" data-type="${yacht.type}" role="listitem" itemscope itemtype="https://schema.org/Product">

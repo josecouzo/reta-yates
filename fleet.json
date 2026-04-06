@@ -13,26 +13,26 @@
       "Navega desde Marina V&V en Punta Sam hacia las aguas cristalinas de Isla Mujeres, el barco hundido o simplemente relájate en alta mar mientras el sol se pone sobre el Caribe."
     ],
     "specs": [
-      { "icon": "📏", "val": "120 ft", "lbl": "Eslora" },
-      { "icon": "👥", "val": "20", "lbl": "Pasajeros" },
-      { "icon": "🛏️", "val": "5", "lbl": "Cabinas" },
-      { "icon": "🚿", "val": "5", "lbl": "Baños" },
-      { "icon": "⚓", "val": "2011", "lbl": "Año" },
-      { "icon": "🛥️", "val": "Motor", "lbl": "Tipo" },
-      { "icon": "📍", "val": "V&V", "lbl": "Marina" },
-      { "icon": "⚡", "val": "A/C", "lbl": "Clima" }
+      { "icon": "fa-solid fa-ruler-horizontal", "val": "120 ft", "lbl": "Eslora" },
+      { "icon": "fa-solid fa-users", "val": "20", "lbl": "Pasajeros" },
+      { "icon": "fa-solid fa-bed", "val": "5", "lbl": "Cabinas" },
+      { "icon": "fa-solid fa-shower", "val": "5", "lbl": "Baños" },
+      { "icon": "fa-solid fa-anchor", "val": "2011", "lbl": "Año" },
+      { "icon": "fa-solid fa-ship", "val": "Motor", "lbl": "Tipo" },
+      { "icon": "fa-solid fa-location-dot", "val": "V&V", "lbl": "Marina" },
+      { "icon": "fa-solid fa-bolt", "val": "A/C", "lbl": "Clima" }
     ],
     "includes": [
-      { "ico": "👨‍✈️", "txt": "Capitán certificado" },
-      { "ico": "👨‍👩‍👦", "txt": "Tripulación de 4 personas" },
-      { "ico": "🍺", "txt": "24 Cervezas nacionales" },
-      { "ico": "💧", "txt": "24 Botellas de agua" },
-      { "ico": "🥤", "txt": "24 Sodas y refrescos" },
-      { "ico": "🥪", "txt": "Botanas de bienvenida" },
-      { "ico": "🤿", "txt": "Equipo de snorkel completo" },
-      { "ico": "⛽", "txt": "Combustible incluido" },
-      { "ico": "🧊", "txt": "Hielera y hielo" },
-      { "ico": "🎵", "txt": "Sistema de sonido premium" }
+      { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
+      { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 4 personas" },
+      { "ico": "fa-solid fa-beer-mug-empty", "txt": "24 Cervezas nacionales" },
+      { "ico": "fa-solid fa-droplet", "txt": "24 Botellas de agua" },
+      { "ico": "fa-solid fa-glass-water", "txt": "24 Sodas y refrescos" },
+      { "ico": "fa-solid fa-utensils", "txt": "Botanas de bienvenida" },
+      { "ico": "fa-solid fa-water", "txt": "Equipo de snorkel completo" },
+      { "ico": "fa-solid fa-gas-pump", "txt": "Combustible incluido" },
+      { "ico": "fa-solid fa-snowflake", "txt": "Hielera y hielo" },
+      { "ico": "fa-solid fa-music", "txt": "Sistema de sonido premium" }
     ],
     "packages": [
       {
@@ -59,37 +59,37 @@
     ],
     "route": [
       {
-        "ico": "⚓",
+        "ico": "fa-solid fa-anchor",
         "name": "Salida Marina V&V",
         "desc": "Punta Sam, norte de Cancún. Estacionamiento gratuito disponible.",
         "time": "9:00 AM"
       },
       {
-        "ico": "🤿",
+        "ico": "fa-solid fa-water",
         "name": "Barco Hundido",
         "desc": "Snorkel en el famoso barco hundido de Cancún. Arrecifes de coral y vida marina espectacular.",
         "time": "10:30 AM"
       },
       {
-        "ico": "🏝️",
+        "ico": "fa-solid fa-umbrella-beach",
         "name": "Playa Norte – Isla Mujeres",
         "desc": "La playa más famosa del Caribe mexicano. Aguas cristalinas color turquesa, ideal para nadar.",
         "time": "12:00 PM"
       },
       {
-        "ico": "🌅",
+        "ico": "fa-solid fa-sun",
         "name": "Regreso y atardecer",
         "desc": "Navegación de regreso mientras el sol pinta el Caribe. El momento más fotografiado del tour.",
         "time": "4:00 PM"
       }
     ],
     "extras": [
-      { "ico": "🏄", "txt": "Moto acuática (hora)" },
-      { "ico": "🏄‍♂️", "txt": "Paddle Board" },
-      { "ico": "💃", "txt": "DJ / Música en vivo" },
-      { "ico": "📸", "txt": "Fotógrafo profesional" },
-      { "ico": "🍽️", "txt": "Chef privado a bordo" },
-      { "ico": "🎂", "txt": "Decoración especial" }
+      { "ico": "fa-solid fa-person-surfing", "txt": "Moto acuática (hora)" },
+      { "ico": "fa-solid fa-person-surfing", "txt": "Paddle Board" },
+      { "ico": "fa-solid fa-music", "txt": "DJ / Música en vivo" },
+      { "ico": "fa-solid fa-camera", "txt": "Fotógrafo profesional" },
+      { "ico": "fa-solid fa-utensils", "txt": "Chef privado a bordo" },
+      { "ico": "fa-solid fa-cake-candles", "txt": "Decoración especial" }
     ],
     "policies": [
       "Anticipo del 30% para confirmar la reserva. El saldo se paga al embarcar.",
@@ -130,24 +130,24 @@
       "La cocina totalmente equipada, el sistema de sonido Bose, y la televisión de pantalla plana aseguran que la comodidad dentro del yate sea tan extraordinaria como las vistas al Caribe desde cubierta."
     ],
     "specs": [
-      { "icon": "📏", "val": "100 ft", "lbl": "Eslora" },
-      { "icon": "👥", "val": "20", "lbl": "Pasajeros" },
-      { "icon": "🛏️", "val": "4", "lbl": "Cabinas" },
-      { "icon": "🚿", "val": "4", "lbl": "Baños" },
-      { "icon": "⚓", "val": "2013", "lbl": "Año" },
-      { "icon": "🛥️", "val": "Motor", "lbl": "Tipo" },
-      { "icon": "📍", "val": "Kaybal", "lbl": "Marina" },
-      { "icon": "❄️", "val": "A/C", "lbl": "Clima" }
+      { "icon": "fa-solid fa-ruler-horizontal", "val": "100 ft", "lbl": "Eslora" },
+      { "icon": "fa-solid fa-users", "val": "20", "lbl": "Pasajeros" },
+      { "icon": "fa-solid fa-bed", "val": "4", "lbl": "Cabinas" },
+      { "icon": "fa-solid fa-shower", "val": "4", "lbl": "Baños" },
+      { "icon": "fa-solid fa-anchor", "val": "2013", "lbl": "Año" },
+      { "icon": "fa-solid fa-ship", "val": "Motor", "lbl": "Tipo" },
+      { "icon": "fa-solid fa-location-dot", "val": "Kaybal", "lbl": "Marina" },
+      { "icon": "fa-solid fa-snowflake", "val": "A/C", "lbl": "Clima" }
     ],
     "includes": [
-      { "ico": "👨‍✈️", "txt": "Capitán certificado" },
-      { "ico": "👨‍👩‍👦", "txt": "Tripulación de 3 personas" },
-      { "ico": "🍺", "txt": "24 Cervezas nacionales" },
-      { "ico": "💧", "txt": "Agua y sodas cortesía" },
-      { "ico": "🥪", "txt": "Botanas de bienvenida" },
-      { "ico": "🤿", "txt": "Equipo de snorkel" },
-      { "ico": "⛽", "txt": "Combustible incluido" },
-      { "ico": "🎵", "txt": "Sistema Bose a bordo" }
+      { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
+      { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 3 personas" },
+      { "ico": "fa-solid fa-beer-mug-empty", "txt": "24 Cervezas nacionales" },
+      { "ico": "fa-solid fa-droplet", "txt": "Agua y sodas cortesía" },
+      { "ico": "fa-solid fa-utensils", "txt": "Botanas de bienvenida" },
+      { "ico": "fa-solid fa-water", "txt": "Equipo de snorkel" },
+      { "ico": "fa-solid fa-gas-pump", "txt": "Combustible incluido" },
+      { "ico": "fa-solid fa-music", "txt": "Sistema Bose a bordo" }
     ],
     "packages": [
       {
@@ -174,37 +174,37 @@
     ],
     "route": [
       {
-        "ico": "⚓",
+        "ico": "fa-solid fa-anchor",
         "name": "Salida Marina Kaybal",
         "desc": "Blvd Kukulcán km 3.5, frente al restaurante Las Hijas de la Tostada. Fácil acceso desde la Zona Hotelera.",
         "time": "9:00 AM"
       },
       {
-        "ico": "🤿",
+        "ico": "fa-solid fa-water",
         "name": "Barco Hundido + Corales",
         "desc": "Snorkel en el C58 — un destructor hundido artificialmente que hoy alberga una biodiversidad extraordinaria.",
         "time": "10:30 AM"
       },
       {
-        "ico": "🏝️",
+        "ico": "fa-solid fa-umbrella-beach",
         "name": "Playa Norte – Isla Mujeres",
         "desc": "Las aguas más tranquilas y cristalinas del Caribe. Puedes nadar, hacer kayak o simplemente relajarte.",
         "time": "12:00 PM"
       },
       {
-        "ico": "⛵",
+        "ico": "fa-solid fa-sailboat",
         "name": "Navegación de regreso",
         "desc": "Crucero de vuelta con bebidas y música. El atardecer sobre la laguna Nichupté es simplemente espectacular.",
         "time": "4:00 PM"
       }
     ],
     "extras": [
-      { "ico": "🏄", "txt": "Moto acuática" },
-      { "ico": "📸", "txt": "Fotógrafo profesional" },
-      { "ico": "🍽️", "txt": "Servicio de catering" },
-      { "ico": "🎂", "txt": "Decoración cumpleaños" },
-      { "ico": "🎶", "txt": "DJ a bordo" },
-      { "ico": "🧖", "txt": "Masajista profesional" }
+      { "ico": "fa-solid fa-person-surfing", "txt": "Moto acuática" },
+      { "ico": "fa-solid fa-camera", "txt": "Fotógrafo profesional" },
+      { "ico": "fa-solid fa-utensils", "txt": "Servicio de catering" },
+      { "ico": "fa-solid fa-cake-candles", "txt": "Decoración cumpleaños" },
+      { "ico": "fa-solid fa-music", "txt": "DJ a bordo" },
+      { "ico": "fa-solid fa-spa", "txt": "Masajista profesional" }
     ],
     "policies": [
       "Anticipo del 30% para confirmar. Saldo en efectivo al embarcar.",
@@ -243,24 +243,24 @@
       "Perfecto para propuestas de matrimonio, aniversarios, sorpresas románticas o simplemente despedir el día de la manera más memorable posible. El yate sale exactamente 2 horas antes del atardecer para garantizar la mejor luz."
     ],
     "specs": [
-      { "icon": "📏", "val": "68 ft", "lbl": "Eslora" },
-      { "icon": "👥", "val": "12", "lbl": "Pasajeros" },
-      { "icon": "🛏️", "val": "2", "lbl": "Cabinas" },
-      { "icon": "🚿", "val": "2", "lbl": "Baños" },
-      { "icon": "⏱️", "val": "2h", "lbl": "Duración" },
-      { "icon": "🌅", "val": "Tarde", "lbl": "Horario" },
-      { "icon": "📍", "val": "Kaybal", "lbl": "Marina" },
-      { "icon": "❄️", "val": "A/C", "lbl": "Clima" }
+      { "icon": "fa-solid fa-ruler-horizontal", "val": "68 ft", "lbl": "Eslora" },
+      { "icon": "fa-solid fa-users", "val": "12", "lbl": "Pasajeros" },
+      { "icon": "fa-solid fa-bed", "val": "2", "lbl": "Cabinas" },
+      { "icon": "fa-solid fa-shower", "val": "2", "lbl": "Baños" },
+      { "icon": "fa-solid fa-clock", "val": "2h", "lbl": "Duración" },
+      { "icon": "fa-solid fa-sun", "val": "Tarde", "lbl": "Horario" },
+      { "icon": "fa-solid fa-location-dot", "val": "Kaybal", "lbl": "Marina" },
+      { "icon": "fa-solid fa-snowflake", "val": "A/C", "lbl": "Clima" }
     ],
     "includes": [
-      { "ico": "🥂", "txt": "Vino espumoso de bienvenida" },
-      { "ico": "🥩", "txt": "Tabla de carnes frías y quesos" },
-      { "ico": "👨‍✈️", "txt": "Capitán certificado" },
-      { "ico": "👨‍👩‍👦", "txt": "Tripulación de 2 personas" },
-      { "ico": "💧", "txt": "Agua y refrescos" },
-      { "ico": "⛽", "txt": "Combustible incluido" },
-      { "ico": "🎵", "txt": "Música ambiente a bordo" },
-      { "ico": "📸", "txt": "Sesión de fotos incluida" }
+      { "ico": "fa-solid fa-champagne-glasses", "txt": "Vino espumoso de bienvenida" },
+      { "ico": "fa-solid fa-drumstick-bite", "txt": "Tabla de carnes frías y quesos" },
+      { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
+      { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 2 personas" },
+      { "ico": "fa-solid fa-droplet", "txt": "Agua y refrescos" },
+      { "ico": "fa-solid fa-gas-pump", "txt": "Combustible incluido" },
+      { "ico": "fa-solid fa-music", "txt": "Música ambiente a bordo" },
+      { "ico": "fa-solid fa-camera", "txt": "Sesión de fotos incluida" }
     ],
     "packages": [
       {
@@ -280,37 +280,37 @@
     ],
     "route": [
       {
-        "ico": "⚓",
+        "ico": "fa-solid fa-anchor",
         "name": "Salida Marina Kaybal",
         "desc": "Blvd Kukulcán km 3.5. Llegamos a recibirte con vino espumoso de bienvenida.",
         "time": "5:30 PM"
       },
       {
-        "ico": "🌊",
+        "ico": "fa-solid fa-water",
         "name": "Bahía de Cancún",
         "desc": "Navegación tranquila por la bahía con vistas a la Zona Hotelera y la laguna Nichupté.",
         "time": "5:45 PM"
       },
       {
-        "ico": "🌅",
+        "ico": "fa-solid fa-sun",
         "name": "Punto de máximo atardecer",
         "desc": "Fondeamos en el punto con mejor visibilidad al horizonte. El momento más fotogénico del Caribe.",
         "time": "6:30 PM"
       },
       {
-        "ico": "🌃",
+        "ico": "fa-solid fa-city",
         "name": "Regreso al marina",
         "desc": "Navegación de vuelta mientras las luces de Cancún comienzan a brillar sobre el agua.",
         "time": "7:30 PM"
       }
     ],
     "extras": [
-      { "ico": "💐", "txt": "Arreglo floral" },
-      { "ico": "💍", "txt": "Propuesta matrimonial" },
-      { "ico": "🎂", "txt": "Pastel de cumpleaños" },
-      { "ico": "📸", "txt": "Fotógrafo extendido" },
-      { "ico": "🍫", "txt": "Mesa de chocolates" },
-      { "ico": "🕯️", "txt": "Velas y decoración" }
+      { "ico": "fa-solid fa-leaf", "txt": "Arreglo floral" },
+      { "ico": "fa-solid fa-ring", "txt": "Propuesta matrimonial" },
+      { "ico": "fa-solid fa-cake-candles", "txt": "Pastel de cumpleaños" },
+      { "ico": "fa-solid fa-camera", "txt": "Fotógrafo extendido" },
+      { "ico": "fa-solid fa-candy-cane", "txt": "Mesa de chocolates" },
+      { "ico": "fa-solid fa-fire", "txt": "Velas y decoración" }
     ],
     "policies": [
       "Pago completo al reservar para garantizar la fecha.",
@@ -349,26 +349,26 @@
       "Ya sea una despedida de soltero/a, una reunión corporativa, un cumpleaños de ensueño o una boda en el mar — este yate tiene el espacio, la infraestructura y la tripulación para que todo salga perfecto."
     ],
     "specs": [
-      { "icon": "📏", "val": "85 ft", "lbl": "Eslora" },
-      { "icon": "👥", "val": "50", "lbl": "Pasajeros" },
-      { "icon": "🛏️", "val": "4", "lbl": "Cabinas" },
-      { "icon": "🚿", "val": "4", "lbl": "Baños" },
-      { "icon": "⚓", "val": "2009", "lbl": "Año" },
-      { "icon": "🛥️", "val": "Motor", "lbl": "Tipo" },
-      { "icon": "📍", "val": "Kaybal", "lbl": "Marina" },
-      { "icon": "🎵", "val": "Pro", "lbl": "Audio" }
+      { "icon": "fa-solid fa-ruler-horizontal", "val": "85 ft", "lbl": "Eslora" },
+      { "icon": "fa-solid fa-users", "val": "50", "lbl": "Pasajeros" },
+      { "icon": "fa-solid fa-bed", "val": "4", "lbl": "Cabinas" },
+      { "icon": "fa-solid fa-shower", "val": "4", "lbl": "Baños" },
+      { "icon": "fa-solid fa-anchor", "val": "2009", "lbl": "Año" },
+      { "icon": "fa-solid fa-ship", "val": "Motor", "lbl": "Tipo" },
+      { "icon": "fa-solid fa-location-dot", "val": "Kaybal", "lbl": "Marina" },
+      { "icon": "fa-solid fa-music", "val": "Pro", "lbl": "Audio" }
     ],
     "includes": [
-      { "ico": "👨‍✈️", "txt": "Capitán certificado" },
-      { "ico": "👨‍👩‍👦", "txt": "Tripulación de 4 personas" },
-      { "ico": "🍺", "txt": "Bebidas de cortesía" },
-      { "ico": "💧", "txt": "Agua y sodas incluidas" },
-      { "ico": "🥪", "txt": "Botanas de bienvenida" },
-      { "ico": "🤿", "txt": "Equipo de snorkel" },
-      { "ico": "🏄‍♂️", "txt": "Paddle board a bordo" },
-      { "ico": "⛽", "txt": "Combustible incluido" },
-      { "ico": "🎵", "txt": "Sistema de sonido profesional" },
-      { "ico": "📋", "txt": "Coordinador de evento" }
+      { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
+      { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 4 personas" },
+      { "ico": "fa-solid fa-beer-mug-empty", "txt": "Bebidas de cortesía" },
+      { "ico": "fa-solid fa-droplet", "txt": "Agua y sodas incluidas" },
+      { "ico": "fa-solid fa-utensils", "txt": "Botanas de bienvenida" },
+      { "ico": "fa-solid fa-water", "txt": "Equipo de snorkel" },
+      { "ico": "fa-solid fa-person-surfing", "txt": "Paddle board a bordo" },
+      { "ico": "fa-solid fa-gas-pump", "txt": "Combustible incluido" },
+      { "ico": "fa-solid fa-music", "txt": "Sistema de sonido profesional" },
+      { "ico": "fa-solid fa-clipboard-list", "txt": "Coordinador de evento" }
     ],
     "packages": [
       {
@@ -395,37 +395,37 @@
     ],
     "route": [
       {
-        "ico": "⚓",
+        "ico": "fa-solid fa-anchor",
         "name": "Salida Marina Kaybal",
         "desc": "Punto de salida en la Zona Hotelera. El coordinador te recibe 30 min antes del zarpe para el check-in del grupo.",
         "time": "9:00 AM"
       },
       {
-        "ico": "🤿",
+        "ico": "fa-solid fa-water",
         "name": "Barco Hundido",
         "desc": "Parada opcional para snorkel grupal. El guía a bordo dirige la actividad de manera segura para todos.",
         "time": "10:30 AM"
       },
       {
-        "ico": "🏝️",
+        "ico": "fa-solid fa-umbrella-beach",
         "name": "Isla Mujeres – Playa Norte",
         "desc": "Descenso en la playa más famosa del Caribe. Libre para nadar, fotos o explorar el malecón.",
         "time": "12:00 PM"
       },
       {
-        "ico": "🎉",
+        "ico": "fa-solid fa-champagne-glasses",
         "name": "Fiesta de regreso",
         "desc": "La travesía de vuelta es la mejor parte: música en vivo o DJ, barra libre y el horizonte del Caribe de fondo.",
         "time": "3:00 PM"
       }
     ],
     "extras": [
-      { "ico": "🎧", "txt": "DJ profesional" },
-      { "ico": "🍽️", "txt": "Catering personalizado" },
-      { "ico": "🎤", "txt": "Sistema de karaoke" },
-      { "ico": "📸", "txt": "Fotógrafo/Videógrafo" },
-      { "ico": "🎂", "txt": "Mesa de postres temática" },
-      { "ico": "🏄", "txt": "Deportes acuáticos extra" }
+      { "ico": "fa-solid fa-headphones", "txt": "DJ profesional" },
+      { "ico": "fa-solid fa-utensils", "txt": "Catering personalizado" },
+      { "ico": "fa-solid fa-microphone", "txt": "Sistema de karaoke" },
+      { "ico": "fa-solid fa-camera", "txt": "Fotógrafo/Videógrafo" },
+      { "ico": "fa-solid fa-cake-candles", "txt": "Mesa de postres temática" },
+      { "ico": "fa-solid fa-person-surfing", "txt": "Deportes acuáticos extra" }
     ],
     "policies": [
       "Anticipo del 50% para grupos de 20+ personas para confirmar la reserva.",

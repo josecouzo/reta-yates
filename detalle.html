@@ -46,6 +46,10 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <style>
       /* ── RESET & VARS ── */
@@ -389,6 +393,9 @@
         margin-bottom: 0.35rem;
         display: block;
       }
+      .spec-icon i {
+        color: var(--aqua);
+      }
       .spec-val {
         font-family: var(--serif);
         font-size: 1.3rem;
@@ -448,6 +455,9 @@
       .inc-item .ico {
         font-size: 1rem;
         flex-shrink: 0;
+        color: var(--aqua);
+        width: 16px;
+        text-align: center;
       }
 
       /* extras / add-ons */
@@ -468,6 +478,7 @@
         font-size: 1.1rem;
         display: block;
         margin-bottom: 0.25rem;
+        color: var(--aqua);
       }
 
       /* packages / pricing */
@@ -553,7 +564,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        color: var(--aqua);
         flex-shrink: 0;
         margin-top: 2px;
       }
@@ -777,11 +789,12 @@
         font-size: 0.78rem;
         color: var(--muted);
       }
-      .bi-item::before {
-        content: "✓";
+      .bi-item i {
         color: var(--aqua);
-        font-weight: 600;
+        font-size: 0.85rem;
         flex-shrink: 0;
+        width: 14px;
+        text-align: center;
       }
 
       .availability-badge {
@@ -1264,7 +1277,7 @@
           .map(
             (s) => `
     <div class="spec-box">
-      <span class="spec-icon">${s.icon}</span>
+      <span class="spec-icon"><i class="${s.icon}"></i></span>
       <span class="spec-val">${s.val}</span>
       <span class="spec-lbl">${s.lbl}</span>
     </div>`,
@@ -1280,7 +1293,7 @@
         document.getElementById("includesGrid").innerHTML = y.includes
           .map(
             (i) => `
-    <div class="inc-item"><span class="ico">${i.ico}</span>${i.txt}</div>`,
+    <div class="inc-item"><span class="ico"><i class="${i.ico}"></i></span>${i.txt}</div>`,
           )
           .join("");
 
@@ -1306,7 +1319,7 @@
           .map(
             (r) => `
     <div class="route-stop">
-      <div class="stop-dot">${r.ico}</div>
+      <div class="stop-dot"><i class="${r.ico}"></i></div>
       <div class="stop-info">
         <h4>${r.name}</h4>
         <p>${r.desc}</p>
@@ -1320,7 +1333,7 @@
         document.getElementById("extrasGrid").innerHTML = y.extras
           .map(
             (e) => `
-    <div class="extra-item"><span class="eco">${e.ico}</span>${e.txt}</div>`,
+    <div class="extra-item"><span class="eco"><i class="${e.ico}"></i></span>${e.txt}</div>`,
           )
           .join("");
 
@@ -1369,7 +1382,7 @@
           .slice(0, 5)
           .map(
             (i) => `
-    <div class="bi-item">${i.ico} ${i.txt}</div>`,
+    <div class="bi-item"><i class="${i.ico}"></i> ${i.txt}</div>`,
           )
           .join("");
       }
