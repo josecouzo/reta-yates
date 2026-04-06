@@ -1,0 +1,100 @@
+<!--
+  yacht-card.html — Reference template (not loaded by JS directly)
+
+  Yacht cards are generated dynamically in js/main.js → buildYachtCard()
+  from the `yachts[]` data array.
+
+  This file documents the HTML structure of a single card for reference
+  when adding new yachts or integrating with a backend/CMS later.
+
+  To add a new yacht: edit the `yachts` array in js/main.js
+-->
+
+<article
+  class="yacht-card reveal"
+  role="listitem"
+  data-categories="lujo grande"
+  aria-label="Yate Nombre del Yate"
+>
+  <div class="yacht-card__img">
+    <!--
+      Option A (CSS gradient placeholder — current default):
+      Set background via inline style or CSS class.
+    -->
+    <div
+      class="yacht-card__img-bg"
+      style="background: linear-gradient(135deg, #0a4fa6 0%, #00b4d8 100%)"
+      role="img"
+      aria-label="Foto del yate Nombre del Yate"
+    >
+      <svg
+        width="72"
+        height="72"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        aria-hidden="true"
+      >
+        <path d="M2 20h20M5 20V10l7-6 7 6v10" />
+        <path d="M12 14v6M9 14h6" />
+      </svg>
+    </div>
+
+    <!--
+      Option B (real photo — replace gradient div above with this):
+      <img
+        src="../img/yacht-nombre.jpg"
+        alt="Yate Nombre del Yate — renta en Cancún"
+        loading="lazy"
+        width="640"
+        height="440"
+      />
+    -->
+
+    <!-- Badge (optional) -->
+    <div class="yacht-card__badge">
+      <span class="tag tag--gold">Premium</span>
+    </div>
+  </div>
+
+  <div class="yacht-card__body">
+    <h3 class="yacht-card__name">Nombre del Yate</h3>
+
+    <div class="yacht-card__specs" aria-label="Especificaciones">
+      <div class="yacht-card__spec">
+        <span class="yacht-card__spec-icon" aria-hidden="true">📏</span>
+        <span>50 pies</span>
+      </div>
+      <div class="yacht-card__spec">
+        <span class="yacht-card__spec-icon" aria-hidden="true">👥</span>
+        <span>12 personas</span>
+      </div>
+      <div class="yacht-card__spec">
+        <span class="yacht-card__spec-icon" aria-hidden="true">🛏</span>
+        <span>2 cabinas</span>
+      </div>
+    </div>
+
+    <div class="yacht-card__tags" aria-label="Etiquetas">
+      <span class="tag tag--dark">Lujo</span>
+      <span class="tag tag--dark">Sunset</span>
+    </div>
+
+    <div class="yacht-card__footer">
+      <div class="yacht-card__price">
+        <span class="yacht-card__price-from">Desde</span>
+        <span class="yacht-card__price-value">$18,000 MXN</span>
+      </div>
+      <a
+        href="https://wa.me/529981234567?text=Hola%2C%20me%20interesa%20el%20yate"
+        class="btn btn--primary btn--sm"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Cotizar Nombre del Yate por WhatsApp"
+      >
+        Cotizar
+      </a>
+    </div>
+  </div>
+</article>

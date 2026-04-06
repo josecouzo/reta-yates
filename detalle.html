@@ -1,0 +1,1453 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- SEO — filled dynamically by JS -->
+    <title id="meta-title">Renta de Yate en Cancún | Ancla & Go</title>
+    <meta
+      name="description"
+      id="meta-desc"
+      content="Renta de yates privados en Cancún con capitán, bebidas y snorkel incluidos. Reserva por WhatsApp."
+    />
+    <meta
+      name="keywords"
+      id="meta-keys"
+      content="renta de yates cancun, yate privado cancun, charter yate cancun"
+    />
+    <link
+      rel="canonical"
+      id="meta-canonical"
+      href="https://anclaandgo.com/yates/"
+    />
+    <meta
+      property="og:title"
+      id="og-title"
+      content="Ancla & Go | Renta de Yate en Cancún"
+    />
+    <meta
+      property="og:description"
+      id="og-desc"
+      content="Yate privado con capitán, bebidas y snorkel incluidos."
+    />
+    <meta property="og:type" content="product" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:image" id="og-image" content="" />
+
+    <!-- Schema.org filled dynamically -->
+    <script id="schema-product" type="application/ld+json">
+      {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ── RESET & VARS ── */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --white: #ffffff;
+        --off: #f7f6f3;
+        --border: #e6e4de;
+        --text: #0e0e0e;
+        --muted: #6a6a6a;
+        --hint: #ababab;
+        --ocean: #093655;
+        --aqua: #0fa3c7;
+        --aqua-pale: rgba(15, 163, 199, 0.08);
+        --aqua-ring: rgba(15, 163, 199, 0.18);
+        --sand: #c4922f;
+        --sand-pale: #fdf5e4;
+        --serif: "Instrument Serif", Georgia, serif;
+        --sans: "DM Sans", system-ui, sans-serif;
+        --r-card: 20px;
+        --r-pill: 100px;
+        --r-sm: 10px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--white);
+        color: var(--text);
+        font-family: var(--sans);
+        font-size: 16px;
+        line-height: 1.65;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 3px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--aqua);
+      }
+      img {
+        display: block;
+      }
+      a {
+        color: inherit;
+      }
+      button {
+        font-family: var(--sans);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 0.6s,
+          transform 0.6s;
+      }
+      .reveal.vis {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* ── WA FAB ── */
+      .wa-fab {
+        position: fixed;
+        bottom: 1.6rem;
+        right: 1.6rem;
+        z-index: 300;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background: #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+        animation: wapulse 3s ease-in-out infinite;
+        transition: transform 0.2s;
+      }
+      .wa-fab:hover {
+        transform: scale(1.08);
+      }
+      .wa-fab svg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+      }
+      @keyframes wapulse {
+        0%,
+        100% {
+          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+        }
+        50% {
+          box-shadow: 0 4px 40px rgba(37, 211, 102, 0.6);
+        }
+      }
+
+      /* ── NAV ── */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.1rem 2.5rem;
+        transition:
+          background 0.35s,
+          backdrop-filter 0.35s,
+          border-bottom 0.35s;
+      }
+      .nav.solid {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-logo {
+        font-family: var(--serif);
+        font-size: 1.45rem;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .nav-logo span {
+        color: var(--aqua);
+      }
+      .nav-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.82rem;
+        color: var(--muted);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .nav-back:hover {
+        color: var(--text);
+      }
+      .nav-back svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+      }
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        background: var(--text);
+        color: var(--white);
+        font-size: 0.78rem;
+        font-weight: 500;
+        padding: 0.55rem 1.2rem;
+        border-radius: var(--r-pill);
+        text-decoration: none;
+        transition: background 0.2s;
+        border: none;
+        cursor: pointer;
+      }
+      .nav-cta:hover {
+        background: var(--ocean);
+      }
+
+      /* ── HERO GALLERY ── */
+      .hero-gallery {
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 380px 200px;
+        gap: 0.75rem;
+        background: var(--off);
+      }
+      .gallery-main {
+        grid-row: span 2;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+      }
+      .gallery-main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s;
+      }
+      .gallery-main:hover img {
+        transform: scale(1.03);
+      }
+      .gallery-thumb {
+        position: relative;
+        overflow: hidden;
+      }
+      .gallery-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+      .gallery-thumb:hover img {
+        transform: scale(1.05);
+      }
+      .gallery-thumb.more {
+        cursor: pointer;
+        position: relative;
+      }
+      .gallery-more-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(9, 54, 85, 0.55);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.8rem;
+        font-family: var(--serif);
+        gap: 0.25rem;
+      }
+      .gallery-more-overlay span {
+        font-size: 0.75rem;
+        font-weight: 400;
+        opacity: 0.8;
+        font-family: var(--sans);
+      }
+
+      /* ── BREADCRUMB ── */
+      .breadcrumb {
+        padding: 0.9rem 2.5rem;
+        font-size: 0.75rem;
+        color: var(--hint);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--white);
+      }
+      .breadcrumb a {
+        color: var(--hint);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .breadcrumb a:hover {
+        color: var(--aqua);
+      }
+      .breadcrumb .sep {
+        opacity: 0.4;
+      }
+
+      /* ── MAIN LAYOUT ── */
+      .detail-layout {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 3rem;
+        padding: 3rem 2.5rem 5rem;
+        align-items: start;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+
+      /* LEFT COLUMN */
+      .detail-main {
+      }
+
+      /* eyebrow + title */
+      .yacht-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--aqua-pale);
+        color: var(--ocean);
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        padding: 0.32rem 0.9rem;
+        border-radius: var(--r-pill);
+        margin-bottom: 1rem;
+      }
+      .yacht-eyebrow::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--aqua);
+        flex-shrink: 0;
+      }
+      .yacht-h1 {
+        font-family: var(--serif);
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.5rem;
+      }
+      .yacht-h1 em {
+        font-style: italic;
+        color: var(--aqua);
+      }
+      .yacht-model-badge {
+        font-size: 0.72rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--aqua);
+        margin-bottom: 1.5rem;
+        display: block;
+      }
+      .yacht-tagline {
+        font-size: 1rem;
+        color: var(--muted);
+        font-weight: 300;
+        line-height: 1.85;
+        max-width: 580px;
+        margin-bottom: 2rem;
+      }
+
+      /* specs grid */
+      .specs-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: var(--r-sm);
+        overflow: hidden;
+        margin-bottom: 2.5rem;
+      }
+      .spec-box {
+        background: var(--white);
+        padding: 1.1rem 0.75rem;
+        text-align: center;
+      }
+      .spec-icon {
+        font-size: 1.2rem;
+        margin-bottom: 0.35rem;
+        display: block;
+      }
+      .spec-val {
+        font-family: var(--serif);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: block;
+        line-height: 1;
+      }
+      .spec-lbl {
+        font-size: 0.6rem;
+        color: var(--hint);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 4px;
+        display: block;
+      }
+
+      /* section headings */
+      .detail-section {
+        margin-bottom: 2.75rem;
+      }
+      .detail-section-title {
+        font-family: var(--serif);
+        font-size: 1.35rem;
+        font-weight: 400;
+        margin-bottom: 1.1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      /* description */
+      .yacht-desc {
+        font-size: 0.93rem;
+        color: var(--muted);
+        line-height: 1.9;
+        font-weight: 300;
+      }
+      .yacht-desc p + p {
+        margin-top: 0.85rem;
+      }
+
+      /* includes */
+      .includes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+      }
+      .inc-item {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        padding: 0.7rem 0.85rem;
+        background: var(--off);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font-size: 0.82rem;
+      }
+      .inc-item .ico {
+        font-size: 1rem;
+        flex-shrink: 0;
+      }
+
+      /* extras / add-ons */
+      .extras-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+      }
+      .extra-item {
+        padding: 0.7rem 0.85rem;
+        text-align: center;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+      .extra-item .eco {
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+
+      /* packages / pricing */
+      .packages-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .package-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.1rem;
+        background: var(--off);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .package-row.featured {
+        border-color: var(--aqua);
+        background: var(--aqua-pale);
+      }
+      .pkg-name {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+      .pkg-detail {
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+      .pkg-badge {
+        font-size: 0.6rem;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        background: var(--aqua);
+        color: white;
+        padding: 0.2rem 0.6rem;
+        border-radius: var(--r-pill);
+        white-space: nowrap;
+      }
+      .pkg-price {
+        text-align: right;
+        flex-shrink: 0;
+      }
+      .pkg-price-val {
+        font-family: var(--serif);
+        font-size: 1.3rem;
+        font-weight: 400;
+        display: block;
+        line-height: 1;
+      }
+      .pkg-price-note {
+        font-size: 0.62rem;
+        color: var(--hint);
+        margin-top: 2px;
+      }
+
+      /* route */
+      .route-stops {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .route-stop {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.85rem;
+        padding: 0.85rem 0;
+      }
+      .route-stop:not(:last-child) {
+        border-bottom: 1px dashed var(--border);
+      }
+      .stop-dot {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: var(--aqua-pale);
+        border: 1px solid var(--aqua-ring);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .stop-info h4 {
+        font-size: 0.88rem;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+      .stop-info p {
+        font-size: 0.78rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .stop-time {
+        font-size: 0.65rem;
+        color: var(--aqua);
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-top: 3px;
+        display: block;
+      }
+
+      /* policies */
+      .policy-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .policy-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.65rem;
+        font-size: 0.83rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .policy-item::before {
+        content: "·";
+        color: var(--aqua);
+        font-size: 1.2rem;
+        line-height: 1;
+        flex-shrink: 0;
+        margin-top: -0.1rem;
+      }
+
+      /* marina map card */
+      .marina-card {
+        background: var(--off);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+      }
+      .marina-map-placeholder {
+        height: 160px;
+        background: linear-gradient(135deg, #0a3d62 0%, #0fa3c7 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+      }
+      .marina-info {
+        padding: 1rem 1.1rem;
+      }
+      .marina-name {
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+      .marina-addr {
+        font-size: 0.78rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      /* ── RIGHT STICKY SIDEBAR ── */
+      .detail-sidebar {
+      }
+      .booking-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--r-card);
+        box-shadow: 0 4px 24px rgba(9, 54, 85, 0.08);
+        padding: 1.75rem;
+        position: sticky;
+        top: 6rem;
+      }
+      .booking-price-main {
+        font-family: var(--serif);
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 0.25rem;
+      }
+      .booking-price-note {
+        font-size: 0.72rem;
+        color: var(--hint);
+        margin-bottom: 1.25rem;
+        display: block;
+      }
+      .booking-divider {
+        height: 1px;
+        background: var(--border);
+        margin: 1.25rem 0;
+      }
+
+      .booking-select {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.7rem 0.9rem;
+        font-family: var(--sans);
+        font-size: 0.83rem;
+        color: var(--text);
+        background: var(--white);
+        appearance: none;
+        cursor: pointer;
+        margin-bottom: 0.6rem;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23ababab' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 0.85rem center;
+        padding-right: 2rem;
+      }
+      .booking-select:focus {
+        outline: 2px solid var(--aqua);
+        outline-offset: 1px;
+      }
+      .booking-selected-price {
+        background: var(--off);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.75rem 0.9rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bsp-label {
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+      .bsp-val {
+        font-family: var(--serif);
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      .btn-wa-book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        background: #25d366;
+        color: white;
+        font-size: 0.88rem;
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: var(--r-pill);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+        margin-bottom: 0.6rem;
+      }
+      .btn-wa-book:hover {
+        background: #1fba5a;
+        transform: translateY(-1px);
+      }
+      .btn-wa-book svg {
+        width: 16px;
+        height: 16px;
+        fill: white;
+        flex-shrink: 0;
+      }
+      .btn-consult {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        background: transparent;
+        color: var(--text);
+        font-size: 0.82rem;
+        font-weight: 500;
+        padding: 0.85rem;
+        border-radius: var(--r-pill);
+        border: 1px solid var(--border);
+        cursor: pointer;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+      }
+      .btn-consult:hover {
+        border-color: var(--text);
+        background: var(--off);
+      }
+
+      .booking-includes {
+        margin-top: 1.25rem;
+      }
+      .bi-title {
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--hint);
+        margin-bottom: 0.75rem;
+      }
+      .bi-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+      }
+      .bi-item {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+      .bi-item::before {
+        content: "✓";
+        color: var(--aqua);
+        font-weight: 600;
+        flex-shrink: 0;
+      }
+
+      .availability-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #f0fdf4;
+        border: 1px solid #86efac;
+        border-radius: 8px;
+        padding: 0.55rem 0.75rem;
+        margin-top: 1rem;
+        font-size: 0.73rem;
+        color: #166534;
+      }
+      .avail-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #22c55e;
+        flex-shrink: 0;
+        animation: avpulse 2s infinite;
+      }
+      @keyframes avpulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.4;
+        }
+      }
+
+      /* ── SIMILAR YACHTS ── */
+      .similar-section {
+        padding: 4rem 2.5rem;
+        background: var(--off);
+        border-top: 1px solid var(--border);
+      }
+      .similar-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+      .sim-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--r-card);
+        overflow: hidden;
+        text-decoration: none;
+        color: var(--text);
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+        display: block;
+      }
+      .sim-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(9, 54, 85, 0.1);
+      }
+      .sim-img {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+      }
+      .sim-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+      .sim-card:hover .sim-img img {
+        transform: scale(1.06);
+      }
+      .sim-body {
+        padding: 1.1rem;
+      }
+      .sim-model {
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--aqua);
+        margin-bottom: 0.25rem;
+      }
+      .sim-name {
+        font-family: var(--serif);
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+      .sim-price {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+      .sim-price strong {
+        color: var(--text);
+        font-weight: 500;
+      }
+
+      /* ── FOOTER ── */
+      .page-footer {
+        background: #090909;
+        padding: 2rem 2.5rem;
+        text-align: center;
+      }
+      .page-footer p {
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .page-footer a {
+        color: var(--aqua);
+        text-decoration: none;
+      }
+      .page-footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── BTNS ── */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--aqua);
+        color: var(--white);
+        font-size: 0.82rem;
+        font-weight: 500;
+        padding: 0.8rem 1.8rem;
+        border-radius: var(--r-pill);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+      }
+      .btn-primary:hover {
+        background: #0d92b3;
+        transform: translateY(-1px);
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 900px) {
+        .hero-gallery {
+          grid-template-columns: 1fr;
+          grid-template-rows: 280px 160px 160px;
+        }
+        .gallery-main {
+          grid-row: span 1;
+        }
+        .detail-layout {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+          padding: 2rem 1.5rem 4rem;
+        }
+        .specs-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .includes-grid {
+          grid-template-columns: 1fr;
+        }
+        .extras-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .similar-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .nav {
+          padding: 1rem 1.5rem;
+        }
+        .booking-card {
+          position: static;
+        }
+        .breadcrumb {
+          padding: 0.75rem 1.5rem;
+        }
+        .similar-section {
+          padding: 3rem 1.5rem;
+        }
+      }
+      @media (max-width: 520px) {
+        .hero-gallery {
+          grid-template-rows: 220px 140px 140px;
+        }
+        .similar-grid {
+          grid-template-columns: 1fr;
+        }
+        .packages-list .package-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .pkg-price {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- WA FAB -->
+    <a
+      class="wa-fab"
+      id="waFab"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Reservar por WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <!-- NAV -->
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="nav-logo">Ancla <span>&</span> Go</a>
+      <a href="index.html#flota" class="nav-back">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
+        Ver toda la flota
+      </a>
+      <a class="nav-cta" id="navCta" href="#" target="_blank" rel="noopener">
+        <svg width="13" height="13" fill="white" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+          />
+        </svg>
+        Reservar
+      </a>
+    </nav>
+
+    <!-- GALLERY (filled by JS) -->
+    <div class="hero-gallery" id="heroGallery"></div>
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Breadcrumb" id="breadcrumb"></nav>
+
+    <!-- DETAIL LAYOUT -->
+    <div class="detail-layout">
+      <!-- LEFT -->
+      <div class="detail-main">
+        <div class="reveal">
+          <div class="yacht-eyebrow" id="yachtEyebrow">
+            Cancún · Zona Hotelera
+          </div>
+          <h1 class="yacht-h1" id="yachtH1">Cargando...</h1>
+          <span class="yacht-model-badge" id="yachtModel"></span>
+          <p class="yacht-tagline" id="yachtTagline"></p>
+        </div>
+
+        <!-- SPECS -->
+        <div class="detail-section reveal">
+          <div class="specs-grid" id="specsGrid"></div>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">Sobre este yate</h2>
+          <div class="yacht-desc" id="yachtDesc"></div>
+        </div>
+
+        <!-- INCLUDES -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">¿Qué incluye la renta?</h2>
+          <div class="includes-grid" id="includesGrid"></div>
+        </div>
+
+        <!-- PACKAGES -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">Paquetes y precios</h2>
+          <div class="packages-list" id="packagesList"></div>
+        </div>
+
+        <!-- ROUTE -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">Ruta sugerida</h2>
+          <div class="route-stops" id="routeStops"></div>
+        </div>
+
+        <!-- EXTRAS -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">Servicios adicionales</h2>
+          <div class="extras-grid" id="extrasGrid"></div>
+        </div>
+
+        <!-- POLICIES -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">Políticas y condiciones</h2>
+          <div class="policy-list" id="policyList"></div>
+        </div>
+
+        <!-- MARINA -->
+        <div class="detail-section reveal">
+          <h2 class="detail-section-title">Punto de salida</h2>
+          <div class="marina-card">
+            <div class="marina-map-placeholder">⚓</div>
+            <div class="marina-info">
+              <div class="marina-name" id="marinaName">Marina Kaybal</div>
+              <div class="marina-addr" id="marinaAddr">
+                Blvd Kukulcán km 3.5, Zona Hotelera, Cancún, Q.R.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /detail-main -->
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="detail-sidebar">
+        <div class="booking-card reveal">
+          <div class="booking-price-main" id="sidebarPrice">$0</div>
+          <span class="booking-price-note" id="sidebarPriceNote"
+            >MXN · precio desde</span
+          >
+
+          <div class="booking-divider"></div>
+
+          <label
+            for="pkgSelect"
+            style="
+              font-size: 0.75rem;
+              color: var(--muted);
+              display: block;
+              margin-bottom: 0.4rem;
+            "
+            >Selecciona duración:</label
+          >
+          <select class="booking-select" id="pkgSelect"></select>
+
+          <div class="booking-selected-price">
+            <span class="bsp-label">Total del paquete</span>
+            <span class="bsp-val" id="bspVal">$0 MXN</span>
+          </div>
+
+          <a
+            class="btn-wa-book"
+            id="btnWaBook"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+              />
+            </svg>
+            Reservar por WhatsApp
+          </a>
+          <button class="btn-consult" id="btnConsult">
+            Consultar disponibilidad
+          </button>
+
+          <div class="availability-badge">
+            <div class="avail-dot"></div>
+            <span>Disponible para reservar hoy</span>
+          </div>
+
+          <div class="booking-divider"></div>
+
+          <div class="booking-includes">
+            <div class="bi-title">Incluido en todos los paquetes</div>
+            <div class="bi-list" id="sidebarIncludes"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /detail-layout -->
+
+    <!-- SIMILAR YACHTS -->
+    <div class="similar-section">
+      <div
+        class="sec-eye"
+        style="
+          font-size: 0.7rem;
+          font-weight: 500;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: var(--aqua);
+          margin-bottom: 0.75rem;
+        "
+      >
+        También te puede interesar
+      </div>
+      <h2
+        style="
+          font-family: var(--serif);
+          font-size: clamp(1.4rem, 2.5vw, 2rem);
+          font-weight: 400;
+          margin-bottom: 0;
+        "
+      >
+        Otros yates
+        <em style="font-style: italic; color: var(--aqua)"
+          >disponibles en Cancún</em
+        >
+      </h2>
+      <div class="similar-grid" id="similarGrid"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <p>
+        © 2026 <a href="index.html">Ancla & Go</a> · Renta de yates privados en
+        Cancún, Isla Mujeres y Riviera Maya
+      </p>
+    </footer>
+
+    <script src="fleet-loader.js"></script>
+    <script>
+      const WA = "529981234567";
+      const waLink = (msg) =>
+        `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+
+      function fillSEO(y) {
+        document.getElementById("meta-title").textContent = y.seo.title;
+        document
+          .getElementById("meta-desc")
+          .setAttribute("content", y.seo.desc);
+        document
+          .getElementById("meta-keys")
+          .setAttribute("content", y.seo.keys);
+        document
+          .getElementById("meta-canonical")
+          .setAttribute("href", `https://anclaandgo.com/yates/${y.slug}/`);
+        document
+          .getElementById("og-title")
+          .setAttribute("content", y.seo.title);
+        document.getElementById("og-desc").setAttribute("content", y.seo.desc);
+        document
+          .getElementById("og-image")
+          .setAttribute("content", y.images[0]);
+        document.title = y.seo.title;
+
+        // Schema.org Product
+        const schema = {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: `Renta Yate ${y.name} ${y.model} – Cancún`,
+          description: y.seo.desc,
+          image: y.images,
+          brand: { "@type": "Brand", name: "Ancla & Go" },
+          offers: y.packages.map((p) => ({
+            "@type": "Offer",
+            name: p.name,
+            priceCurrency: "MXN",
+            price: p.price.replace(/[^0-9]/g, "") || "0",
+            availability: "https://schema.org/InStock",
+            url: `https://anclaandgo.com/yates/${y.slug}/`,
+          })),
+        };
+        document.getElementById("schema-product").textContent =
+          JSON.stringify(schema);
+      }
+
+      function fillGallery(y) {
+        const g = document.getElementById("heroGallery");
+        const imgs = y.images;
+        let html = `<div class="gallery-main"><img src="${imgs[0]}" alt="${y.name} ${y.model} Cancún renta yate" loading="eager"/></div>`;
+        if (imgs[1])
+          html += `<div class="gallery-thumb"><img src="${imgs[1]}" alt="${y.name} interior yate Cancún" loading="lazy"/></div>`;
+        if (imgs[2])
+          html += `<div class="gallery-thumb"><img src="${imgs[2]}" alt="${y.name} cubierta yate Cancún" loading="lazy"/></div>`;
+        g.innerHTML = html;
+      }
+
+      function fillBreadcrumb(y) {
+        document.getElementById("breadcrumb").innerHTML = `
+    <a href="index.html">Inicio</a><span class="sep">›</span>
+    <a href="index.html#flota">Flota</a><span class="sep">›</span>
+    <span>${y.name} – ${y.model}</span>`;
+      }
+
+      function fillMain(y) {
+        document.getElementById("yachtEyebrow").textContent = y.eyebrow;
+        document.getElementById("yachtH1").innerHTML = `<em>${y.name}</em>`;
+        document.getElementById("yachtModel").textContent = y.model;
+        document.getElementById("yachtTagline").textContent = y.tagline;
+
+        // specs
+        document.getElementById("specsGrid").innerHTML = y.specs
+          .map(
+            (s) => `
+    <div class="spec-box">
+      <span class="spec-icon">${s.icon}</span>
+      <span class="spec-val">${s.val}</span>
+      <span class="spec-lbl">${s.lbl}</span>
+    </div>`,
+          )
+          .join("");
+
+        // description
+        document.getElementById("yachtDesc").innerHTML = y.description
+          .map((p) => `<p>${p}</p>`)
+          .join("");
+
+        // includes
+        document.getElementById("includesGrid").innerHTML = y.includes
+          .map(
+            (i) => `
+    <div class="inc-item"><span class="ico">${i.ico}</span>${i.txt}</div>`,
+          )
+          .join("");
+
+        // packages
+        document.getElementById("packagesList").innerHTML = y.packages
+          .map(
+            (p) => `
+    <div class="package-row${p.featured ? " featured" : ""}">
+      <div>
+        <div class="pkg-name">${p.name} ${p.featured ? '<span class="pkg-badge">Más popular</span>' : ""}</div>
+        <div class="pkg-detail">${p.detail}</div>
+      </div>
+      <div class="pkg-price">
+        <span class="pkg-price-val">${p.price}</span>
+        <span class="pkg-price-note">Precio total</span>
+      </div>
+    </div>`,
+          )
+          .join("");
+
+        // route
+        document.getElementById("routeStops").innerHTML = y.route
+          .map(
+            (r) => `
+    <div class="route-stop">
+      <div class="stop-dot">${r.ico}</div>
+      <div class="stop-info">
+        <h4>${r.name}</h4>
+        <p>${r.desc}</p>
+        <span class="stop-time">${r.time}</span>
+      </div>
+    </div>`,
+          )
+          .join("");
+
+        // extras
+        document.getElementById("extrasGrid").innerHTML = y.extras
+          .map(
+            (e) => `
+    <div class="extra-item"><span class="eco">${e.ico}</span>${e.txt}</div>`,
+          )
+          .join("");
+
+        // policies
+        document.getElementById("policyList").innerHTML = y.policies
+          .map(
+            (p) => `
+    <div class="policy-item">${p}</div>`,
+          )
+          .join("");
+
+        // marina
+        document.getElementById("marinaName").textContent = y.marina.name;
+        document.getElementById("marinaAddr").textContent = y.marina.addr;
+      }
+
+      function fillSidebar(y) {
+        // price
+        const firstPkg = y.packages[0];
+        document.getElementById("sidebarPrice").textContent = firstPkg.price;
+        document.getElementById("sidebarPriceNote").textContent =
+          "MXN · precio desde";
+
+        // select
+        const sel = document.getElementById("pkgSelect");
+        sel.innerHTML = y.packages
+          .map((p, i) => `<option value="${i}">${p.name} — ${p.price}</option>`)
+          .join("");
+        sel.selectedIndex = y.packages.findIndex((p) => p.featured) || 0;
+
+        function updateSidebar() {
+          const pkg = y.packages[sel.value];
+          document.getElementById("bspVal").textContent = `${pkg.price} MXN`;
+          const waHref = `https://wa.me/${WA}?text=${encodeURIComponent(pkg.waMsg)}`;
+          document.getElementById("btnWaBook").href = waHref;
+          document.getElementById("btnConsult").onclick = () =>
+            window.open(waHref, "_blank");
+          document.getElementById("waFab").href = waHref;
+          document.getElementById("navCta").href = waHref;
+        }
+        sel.addEventListener("change", updateSidebar);
+        updateSidebar();
+
+        // includes in sidebar (first 5)
+        document.getElementById("sidebarIncludes").innerHTML = y.includes
+          .slice(0, 5)
+          .map(
+            (i) => `
+    <div class="bi-item">${i.ico} ${i.txt}</div>`,
+          )
+          .join("");
+      }
+
+      function fillSimilar(currentId, fleet) {
+        const others = fleet.filter((y) => y.id !== currentId).slice(0, 3);
+        document.getElementById("similarGrid").innerHTML = others
+          .map(
+            (y) => `
+    <a class="sim-card" href="detalle.html?id=${y.id}">
+      <div class="sim-img"><img src="${y.images[0]}" alt="Renta ${y.name} Cancún" loading="lazy"/></div>
+      <div class="sim-body">
+        <div class="sim-model">${y.model}</div>
+        <div class="sim-name">${y.name}</div>
+        <div class="sim-price">Desde <strong>${y.packages[0].price}</strong></div>
+      </div>
+    </a>`,
+          )
+          .join("");
+      }
+
+      function initReveal() {
+        const obs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e, i) => {
+              if (e.isIntersecting) {
+                setTimeout(() => e.target.classList.add("vis"), i * 60);
+                obs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.08 },
+        );
+        document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+      }
+
+      // Nav scroll
+      window.addEventListener(
+        "scroll",
+        () => {
+          document
+            .getElementById("mainNav")
+            .classList.toggle("solid", window.scrollY > 50);
+        },
+        { passive: true },
+      );
+
+      // Boot
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          const fleet = await loadFleet();
+          const id =
+            new URLSearchParams(window.location.search).get("id") ||
+            fleet[0].id;
+          const yacht = getYachtById(id, fleet) || fleet[0];
+          if (!yacht) {
+            window.location.href = "index.html";
+            return;
+          }
+          fillSEO(yacht);
+          fillGallery(yacht);
+          fillBreadcrumb(yacht);
+          fillMain(yacht);
+          fillSidebar(yacht);
+          fillSimilar(yacht.id, fleet);
+          initReveal();
+        } catch (err) {
+          console.error("Fleet load error:", err);
+        }
+      });
+    </script>
+
+    <!-- ── UPDATE INDEX.HTML CARDS TO LINK HERE ──
+     In your index.html, update each yacht card's "Ver detalles" button:
+     <a href="detalle.html?id=vive-la-vida">Ver detalles</a>
+     <a href="detalle.html?id=el-capricho">Ver detalles</a>
+     <a href="detalle.html?id=atardecer-fairline">Ver detalles</a>
+     <a href="detalle.html?id=a-new-beginning">Ver detalles</a>
+-->
+  </body>
+</html>
