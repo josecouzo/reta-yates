@@ -7,8 +7,8 @@
    CONFIG — change phone number here only
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 const CONFIG = {
-  whatsapp: "529981234567",
-  whatsappBase: "https://wa.me/529981234567",
+  whatsapp: "529904006725",
+  whatsappBase: "https://wa.me/529904006725",
 };
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

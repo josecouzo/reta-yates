@@ -1,10 +1,10 @@
 /**
- * fleet-loader.js — Ancla & Go
+ * fleet-loader.js — Ocean Majesty Cancún
  * Shared module for loading and querying fleet.json.
  * Caches the result in sessionStorage to avoid repeated fetches.
  */
 
-const CACHE_KEY = "anclag_fleet";
+const CACHE_KEY = "oceanmajesty_fleet";
 
 /**
  * Fetches fleet.json and returns the array of yachts.

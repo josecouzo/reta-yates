@@ -1,232 +1,282 @@
 [
   {
-    "id": "vive-la-vida",
-    "slug": "vive-la-vida",
-    "name": "Vive la Vida",
-    "model": "Sunseeker 120ft",
-    "type": "luxury",
-    "eyebrow": "Lujo · Cancún · Zona Hotelera",
-    "tagline": "El yate insignia de Ancla & Go. 120 pies de puro lujo flotante en el Caribe mexicano, diseñado para quienes exigen lo mejor. Ideal para grupos grandes, celebraciones épicas y eventos que merecen un escenario a la altura.",
+    "id": "seventh-star",
+    "slug": "seventh-star",
+    "name": "Seventh Star",
+    "model": "45 ft",
+    "type": "charter",
+    "eyebrow": "Aventura · Cancún · Marina Aqua Tours",
+    "tagline": "Zarpa hacia Isla Mujeres a bordo del Seventh Star, un emocionante 45 pies con barra fría, equipo de snorkel y tripulación lista para hacer de tu día en el Caribe una aventura que no olvidarás.",
     "description": [
-      "El Sunseeker 120ft «Vive la Vida» es la embarcación más exclusiva de nuestra flota. Con sus 120 pies de eslora ofrece un espacio de lujo incomparable: amplias áreas de cubierta para tomar el sol, jacuzzi exterior, salón interior climatizado, cocina completa y 5 elegantes cabinas.",
-      "Perfecto para grupos de hasta 20 personas que buscan una experiencia premium sin compromisos. Su poderoso sistema de sonido, barra equipada y tripulación de 4 personas garantizan que solo te preocupes por disfrutar cada momento a bordo.",
-      "Navega desde Marina V&V en Punta Sam hacia las aguas cristalinas de Isla Mujeres, el barco hundido o simplemente relájate en alta mar mientras el sol se pone sobre el Caribe."
+      "El Seventh Star es una embarcación de 45 pies perfecta para grupos de hasta 15 personas que quieren explorar lo mejor del Caribe cancunense. Desde la Marina Aqua Tours en la Zona Hotelera, cada salida es una experiencia diseñada para disfrutar.",
+      "Todo lo que necesitas ya está a bordo: barra fría con 24 aguas, 24 refrescos y 24 cervezas, equipo completo de snorkel, chalecos salvavidas, toallas y audio Bluetooth. Tú solo llega y disfruta.",
+      "El recorrido clásico parte de Blanquizal hacia Isla Mujeres — ya sea la icónica Playa Norte o la impresionante Punta Sur. También contamos con opciones de 4 horas para quienes buscan una aventura más corta."
     ],
     "specs": [
-      { "icon": "fa-solid fa-ruler-horizontal", "val": "120 ft", "lbl": "Eslora" },
-      { "icon": "fa-solid fa-users", "val": "20", "lbl": "Pasajeros" },
-      { "icon": "fa-solid fa-bed", "val": "5", "lbl": "Cabinas" },
-      { "icon": "fa-solid fa-shower", "val": "5", "lbl": "Baños" },
-      { "icon": "fa-solid fa-anchor", "val": "2011", "lbl": "Año" },
-      { "icon": "fa-solid fa-ship", "val": "Motor", "lbl": "Tipo" },
-      { "icon": "fa-solid fa-location-dot", "val": "V&V", "lbl": "Marina" },
-      { "icon": "fa-solid fa-bolt", "val": "A/C", "lbl": "Clima" }
+      {
+        "icon": "fa-solid fa-ruler-horizontal",
+        "val": "45 ft",
+        "lbl": "Eslora"
+      },
+      { "icon": "fa-solid fa-users", "val": "15", "lbl": "Pasajeros" },
+      {
+        "icon": "fa-solid fa-users-between-lines",
+        "val": "22 máx",
+        "lbl": "Capacidad"
+      },
+      { "icon": "fa-solid fa-user-tie", "val": "2", "lbl": "Tripulación" },
+      {
+        "icon": "fa-solid fa-location-dot",
+        "val": "Aqua Tours",
+        "lbl": "Marina"
+      },
+      { "icon": "fa-solid fa-music", "val": "BT", "lbl": "Audio" },
+      { "icon": "fa-solid fa-water", "val": "Snorkel", "lbl": "Equipo" },
+      {
+        "icon": "fa-solid fa-beer-mug-empty",
+        "val": "72 bebidas",
+        "lbl": "Barra"
+      }
     ],
     "includes": [
       { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
-      { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 4 personas" },
-      { "ico": "fa-solid fa-beer-mug-empty", "txt": "24 Cervezas nacionales" },
-      { "ico": "fa-solid fa-droplet", "txt": "24 Botellas de agua" },
-      { "ico": "fa-solid fa-glass-water", "txt": "24 Sodas y refrescos" },
-      { "ico": "fa-solid fa-utensils", "txt": "Botanas de bienvenida" },
+      { "ico": "fa-solid fa-person", "txt": "Marinero a bordo" },
       { "ico": "fa-solid fa-water", "txt": "Equipo de snorkel completo" },
-      { "ico": "fa-solid fa-gas-pump", "txt": "Combustible incluido" },
-      { "ico": "fa-solid fa-snowflake", "txt": "Hielera y hielo" },
-      { "ico": "fa-solid fa-music", "txt": "Sistema de sonido premium" }
+      { "ico": "fa-solid fa-life-ring", "txt": "Chalecos salvavidas" },
+      { "ico": "fa-solid fa-shirt", "txt": "Toallas incluidas" },
+      { "ico": "fa-solid fa-music", "txt": "Audio Bluetooth" },
+      { "ico": "fa-solid fa-droplet", "txt": "24 Botellas de agua" },
+      { "ico": "fa-solid fa-glass-water", "txt": "24 Refrescos" },
+      { "ico": "fa-solid fa-beer-mug-empty", "txt": "24 Cervezas" }
     ],
     "packages": [
       {
         "name": "4 Horas",
-        "detail": "Tour rápido · Ideal Atardecer",
-        "price": "$180,000 MXN",
-        "waMsg": "Hola! Quiero reservar el Yate Vive la Vida Sunseeker 120ft por 4 horas. ¿Está disponible?",
+        "detail": "Sin cruce a Isla · Tour local",
+        "price": "$11,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Seventh Star de 45ft por 4 horas sin cruce a Isla Mujeres. ¿Está disponible?",
+        "featured": false
+      },
+      {
+        "name": "4 Horas + Isla",
+        "detail": "Con cruce a Isla Mujeres",
+        "price": "$13,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Seventh Star de 45ft por 4 horas con cruce a Isla Mujeres. ¿Está disponible?",
         "featured": false
       },
       {
         "name": "6 Horas",
-        "detail": "Isla Mujeres + Snorkel · Más popular",
-        "price": "$260,000 MXN",
-        "waMsg": "Hola! Quiero reservar el Yate Vive la Vida Sunseeker 120ft por 6 horas. ¿Está disponible?",
+        "detail": "Blanquizal + Isla Mujeres · Más popular",
+        "price": "$15,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Seventh Star de 45ft por 6 horas. ¿Está disponible?",
         "featured": true
       },
       {
         "name": "8 Horas",
         "detail": "Jornada completa · Todo el día",
-        "price": "$360,000 MXN",
-        "waMsg": "Hola! Quiero reservar el Yate Vive la Vida Sunseeker 120ft por 8 horas. ¿Está disponible?",
+        "price": "$17,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Seventh Star de 45ft por 8 horas. ¿Está disponible?",
         "featured": false
       }
     ],
     "route": [
       {
         "ico": "fa-solid fa-anchor",
-        "name": "Salida Marina V&V",
-        "desc": "Punta Sam, norte de Cancún. Estacionamiento gratuito disponible.",
+        "name": "Salida Marina Aqua Tours",
+        "desc": "Zona Hotelera de Cancún. Llegamos a recibirte con todo listo para zarpar.",
         "time": "9:00 AM"
       },
       {
         "ico": "fa-solid fa-water",
-        "name": "Barco Hundido",
-        "desc": "Snorkel en el famoso barco hundido de Cancún. Arrecifes de coral y vida marina espectacular.",
-        "time": "10:30 AM"
+        "name": "Blanquizal",
+        "desc": "Primera parada con aguas cristalinas, perfectas para nadar y practicar snorkel rodeado de vida marina.",
+        "time": "10:00 AM"
       },
       {
         "ico": "fa-solid fa-umbrella-beach",
-        "name": "Playa Norte – Isla Mujeres",
-        "desc": "La playa más famosa del Caribe mexicano. Aguas cristalinas color turquesa, ideal para nadar.",
-        "time": "12:00 PM"
+        "name": "Isla Mujeres",
+        "desc": "Desembarca en Playa Norte —la playa más famosa del Caribe— o llega hasta Punta Sur para vistas únicas.",
+        "time": "11:30 AM"
       },
       {
-        "ico": "fa-solid fa-sun",
-        "name": "Regreso y atardecer",
-        "desc": "Navegación de regreso mientras el sol pinta el Caribe. El momento más fotografiado del tour.",
-        "time": "4:00 PM"
+        "ico": "fa-solid fa-sailboat",
+        "name": "Regreso a Marina",
+        "desc": "Navegación de vuelta con música, bebidas frías y el Caribe de fondo. El final perfecto del día.",
+        "time": "3:00 PM"
       }
     ],
     "extras": [
-      { "ico": "fa-solid fa-person-surfing", "txt": "Moto acuática (hora)" },
-      { "ico": "fa-solid fa-person-surfing", "txt": "Paddle Board" },
-      { "ico": "fa-solid fa-music", "txt": "DJ / Música en vivo" },
-      { "ico": "fa-solid fa-camera", "txt": "Fotógrafo profesional" },
-      { "ico": "fa-solid fa-utensils", "txt": "Chef privado a bordo" },
-      { "ico": "fa-solid fa-cake-candles", "txt": "Decoración especial" }
+      {
+        "ico": "fa-solid fa-person-walking",
+        "txt": "Pasajero extra: $900 MXN (máx. 22 px)"
+      },
+      { "ico": "fa-solid fa-car", "txt": "Transportación (bajo cotización)" },
+      { "ico": "fa-solid fa-cake-candles", "txt": "Decoración especial" },
+      { "ico": "fa-solid fa-camera", "txt": "Fotógrafo profesional" }
     ],
     "policies": [
-      "Anticipo del 30% para confirmar la reserva. El saldo se paga al embarcar.",
-      "Cancelaciones con 72 horas de anticipación reciben reembolso completo.",
-      "Por mal clima se reprograma sin costo o reembolso total.",
-      "El cliente puede traer alimentos y bebidas adicionales sin cargo.",
-      "Hora extra: $45,000 MXN — confirmar al momento de reservar.",
+      "Se reserva la fecha con $2,000 MXN de anticipo.",
+      "Impuesto de muelle: $160 MXN por persona — pago en efectivo al abordar.",
+      "Persona extra: $900 MXN. Capacidad máxima 22 pasajeros.",
+      "Transportación disponible bajo cotización.",
+      "Por mal clima se reprograma sin costo.",
       "Se requiere identificación oficial al embarcar.",
-      "Aplicable impuesto de muelle: $200 MXN por persona (no incluido).",
-      "Propina para capitán y tripulación recomendada (10-15%)."
+      "Propina para tripulación recomendada (10-15%)."
     ],
     "marina": {
-      "name": "Marina V&V – Punta Sam",
-      "addr": "Carretera a Punta Sam SM 84, Puerto Juárez, Cancún, Q.R."
+      "name": "Marina Aqua Tours",
+      "addr": "Blvd. Kukulcán, Zona Hotelera, Cancún, Q.R."
     },
     "images": [
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=85",
-      "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&q=80",
-      "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=800&q=80"
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.24%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.241%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.252%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.253%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.264%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.265%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.276%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.277%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-07%20at%209.49.278%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-08%20at%2011.11.46%20PM.jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-08%20at%2011.11.46%20PM%20(1).jpeg",
+      "img/yate1/WhatsApp%20Image%202026-04-08%20at%2011.11.46%20PM%20(2).jpeg"
     ],
     "seo": {
-      "title": "Renta Yate Sunseeker 120ft \"Vive la Vida\" Cancún | Ancla & Go",
-      "desc": "Renta el Yate Vive la Vida Sunseeker 120ft en Cancún. 20 pasajeros, 5 cabinas, capitán, bebidas y snorkel incluidos. Isla Mujeres y barco hundido. Desde $180,000 MXN.",
-      "keys": "renta yate sunseeker cancun, yate 120 pies cancun, yate lujo 20 personas cancun, vive la vida sunseeker cancun"
+      "title": "Renta Yate Seventh Star 45ft Cancún | Ocean Majesty Cancún",
+      "desc": "Renta el Seventh Star 45ft en Cancún. 15 pasajeros, capitán y marinero, snorkel, bebidas y toallas incluidas. Blanquizal e Isla Mujeres. Desde $11,000 MXN.",
+      "keys": "renta yate 45 pies cancun, seventh star cancun, yate isla mujeres cancun, renta lancha cancun zona hotelera"
     }
   },
   {
-    "id": "el-capricho",
-    "slug": "el-capricho",
-    "name": "El Capricho",
-    "model": "Azimut 100ft",
-    "type": "luxury",
-    "eyebrow": "Lujo Privado · Cancún",
-    "tagline": "Elegancia italiana en cada detalle. El Azimut 100ft «El Capricho» combina diseño sofisticado con el rendimiento excepcional de la marca más reconocida en yates de lujo. Para quienes no se conforman con menos.",
+    "id": "explorer",
+    "slug": "explorer",
+    "name": "Explorer",
+    "model": "Sea Ray 40\"",
+    "type": "charter",
+    "eyebrow": "Confort · Cancún · Zona Hotelera",
+    "tagline": "Dos camarotes, cocina completa, tripulación de 3 y barra fría a bordo. El Explorer Sea Ray 40\" combina comodidad real con la emoción de navegar el Caribe. Para grupos de hasta 25 personas.",
     "description": [
-      "El Azimut 100ft «El Capricho» es sinónimo de refinamiento mediterráneo en el Caribe mexicano. Su diseño de vanguardia italiana ofrece líneas esbeltas, interiores de alta gama y una experiencia de navegación suave que define el lujo moderno.",
-      "Con capacidad para 20 pasajeros, 4 cabinas con baño privado cada una, y una amplia cubierta principal, es el escenario perfecto para celebraciones privadas, viajes corporativos de alto nivel o simplemente una jornada de lujo en el mar.",
-      "La cocina totalmente equipada, el sistema de sonido Bose, y la televisión de pantalla plana aseguran que la comodidad dentro del yate sea tan extraordinaria como las vistas al Caribe desde cubierta."
+      "El Explorer, un Sea Ray de 40 pies, es la embarcación ideal para quienes quieren disfrutar el mar sin renunciar a ninguna comodidad. Dos camarotes, dos baños, cocina, refrigerador y microondas hacen de este barco un hogar flotante en el Caribe.",
+      "Con 1 capitán y 2 marineros a bordo, la tripulación se encarga de todo mientras tú disfrutas de la barra fría: 24 cervezas, 24 refrescos, 24 aguas y 4 bolsas de hielo incluidas. El sistema de audio Bluetooth y las máscaras de snorkel completan la experiencia.",
+      "Capacidad base de 15 pasajeros con opción de hasta 10 personas adicionales (máx. 25 en total). Perfecto tanto para salidas íntimas como para celebraciones más grandes en el Caribe mexicano."
     ],
     "specs": [
-      { "icon": "fa-solid fa-ruler-horizontal", "val": "100 ft", "lbl": "Eslora" },
-      { "icon": "fa-solid fa-users", "val": "20", "lbl": "Pasajeros" },
-      { "icon": "fa-solid fa-bed", "val": "4", "lbl": "Cabinas" },
-      { "icon": "fa-solid fa-shower", "val": "4", "lbl": "Baños" },
-      { "icon": "fa-solid fa-anchor", "val": "2013", "lbl": "Año" },
-      { "icon": "fa-solid fa-ship", "val": "Motor", "lbl": "Tipo" },
-      { "icon": "fa-solid fa-location-dot", "val": "Kaybal", "lbl": "Marina" },
-      { "icon": "fa-solid fa-snowflake", "val": "A/C", "lbl": "Clima" }
+      {
+        "icon": "fa-solid fa-ruler-horizontal",
+        "val": "40 ft",
+        "lbl": "Eslora"
+      },
+      { "icon": "fa-solid fa-users", "val": "15", "lbl": "Pasajeros" },
+      {
+        "icon": "fa-solid fa-users-between-lines",
+        "val": "25 máx",
+        "lbl": "Capacidad"
+      },
+      { "icon": "fa-solid fa-bed", "val": "2", "lbl": "Camarotes" },
+      { "icon": "fa-solid fa-shower", "val": "2", "lbl": "Baños" },
+      { "icon": "fa-solid fa-utensils", "val": "Sí", "lbl": "Cocina" },
+      { "icon": "fa-solid fa-snowflake", "val": "Sí", "lbl": "Refrigerador" },
+      { "icon": "fa-solid fa-music", "val": "BT", "lbl": "Audio" }
     ],
     "includes": [
-      { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
-      { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 3 personas" },
-      { "ico": "fa-solid fa-beer-mug-empty", "txt": "24 Cervezas nacionales" },
-      { "ico": "fa-solid fa-droplet", "txt": "Agua y sodas cortesía" },
-      { "ico": "fa-solid fa-utensils", "txt": "Botanas de bienvenida" },
-      { "ico": "fa-solid fa-water", "txt": "Equipo de snorkel" },
-      { "ico": "fa-solid fa-gas-pump", "txt": "Combustible incluido" },
-      { "ico": "fa-solid fa-music", "txt": "Sistema Bose a bordo" }
+      { "ico": "fa-solid fa-user-tie", "txt": "1 Capitán certificado" },
+      { "ico": "fa-solid fa-people-group", "txt": "2 Marineros" },
+      { "ico": "fa-solid fa-beer-mug-empty", "txt": "24 Cervezas" },
+      { "ico": "fa-solid fa-glass-water", "txt": "24 Refrescos" },
+      { "ico": "fa-solid fa-droplet", "txt": "24 Botellas de agua" },
+      { "ico": "fa-solid fa-snowflake", "txt": "4 Bolsas de hielo" },
+      { "ico": "fa-solid fa-music", "txt": "Música / Bluetooth" },
+      { "ico": "fa-solid fa-life-ring", "txt": "Chalecos salvavidas" },
+      { "ico": "fa-solid fa-water", "txt": "Máscaras de snorkel" }
     ],
     "packages": [
       {
         "name": "4 Horas",
-        "detail": "Ideal para atardecer privado",
-        "price": "$130,000 MXN",
-        "waMsg": "Hola! Quiero reservar el Yate El Capricho Azimut 100ft por 4 horas. ¿Está disponible?",
+        "detail": "Tour rápido · Ideal para grupos",
+        "price": "$12,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Explorer Sea Ray 40 por 4 horas. ¿Está disponible?",
         "featured": false
       },
       {
         "name": "6 Horas",
-        "detail": "Tour Isla Mujeres · Más solicitado",
-        "price": "$215,000 MXN",
-        "waMsg": "Hola! Quiero reservar el Yate El Capricho Azimut 100ft por 6 horas. ¿Está disponible?",
+        "detail": "Isla Mujeres incluida · Más popular",
+        "price": "$14,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Explorer Sea Ray 40 por 6 horas. ¿Está disponible?",
         "featured": true
       },
       {
         "name": "8 Horas",
-        "detail": "Jornada completa + pesca",
-        "price": "$280,000 MXN",
-        "waMsg": "Hola! Quiero reservar el Yate El Capricho Azimut 100ft por 8 horas. ¿Está disponible?",
+        "detail": "Jornada completa · Todo el día",
+        "price": "$16,000 MXN",
+        "waMsg": "Hola! Quiero reservar el Yate Explorer Sea Ray 40 por 8 horas. ¿Está disponible?",
         "featured": false
       }
     ],
     "route": [
       {
         "ico": "fa-solid fa-anchor",
-        "name": "Salida Marina Kaybal",
-        "desc": "Blvd Kukulcán km 3.5, frente al restaurante Las Hijas de la Tostada. Fácil acceso desde la Zona Hotelera.",
+        "name": "Salida desde Marina",
+        "desc": "Zona Hotelera de Cancún. La tripulación te recibe y hace el check-in del grupo.",
         "time": "9:00 AM"
       },
       {
         "ico": "fa-solid fa-water",
-        "name": "Barco Hundido + Corales",
-        "desc": "Snorkel en el C58 — un destructor hundido artificialmente que hoy alberga una biodiversidad extraordinaria.",
+        "name": "Snorkel en el Caribe",
+        "desc": "Parada en aguas cristalinas. Máscaras y chalecos a bordo para todos.",
         "time": "10:30 AM"
       },
       {
         "ico": "fa-solid fa-umbrella-beach",
-        "name": "Playa Norte – Isla Mujeres",
-        "desc": "Las aguas más tranquilas y cristalinas del Caribe. Puedes nadar, hacer kayak o simplemente relajarte.",
+        "name": "Isla Mujeres",
+        "desc": "Visita Playa Norte o explora el pueblo mágico. Tiempo libre para nadar y disfrutar.",
         "time": "12:00 PM"
       },
       {
         "ico": "fa-solid fa-sailboat",
-        "name": "Navegación de regreso",
-        "desc": "Crucero de vuelta con bebidas y música. El atardecer sobre la laguna Nichupté es simplemente espectacular.",
+        "name": "Regreso a Marina",
+        "desc": "De vuelta con música, bebidas frías y el mejor atardecer del Caribe de fondo.",
         "time": "4:00 PM"
       }
     ],
     "extras": [
-      { "ico": "fa-solid fa-person-surfing", "txt": "Moto acuática" },
+      {
+        "ico": "fa-solid fa-person-walking",
+        "txt": "Pasajero extra: $1,000 MXN (máx. 10 adicionales)"
+      },
       { "ico": "fa-solid fa-camera", "txt": "Fotógrafo profesional" },
-      { "ico": "fa-solid fa-utensils", "txt": "Servicio de catering" },
-      { "ico": "fa-solid fa-cake-candles", "txt": "Decoración cumpleaños" },
-      { "ico": "fa-solid fa-music", "txt": "DJ a bordo" },
-      { "ico": "fa-solid fa-spa", "txt": "Masajista profesional" }
+      { "ico": "fa-solid fa-cake-candles", "txt": "Decoración especial" },
+      { "ico": "fa-solid fa-utensils", "txt": "Catering adicional" }
     ],
     "policies": [
-      "Anticipo del 30% para confirmar. Saldo en efectivo al embarcar.",
-      "Cancelaciones con 72 horas: reembolso completo.",
-      "Hora extra: $35,000 MXN — confirmar con anticipación.",
-      "El cliente puede traer comida y bebidas adicionales.",
-      "Impuesto de muelle: $200 MXN/persona (no incluido).",
-      "Se requiere identificación oficial para todos los pasajeros."
+      "Se reserva con $2,000 MXN de anticipo.",
+      "Pasajeros adicionales: $1,000 MXN c/u. Máximo 10 extras (total 25 px).",
+      "Impuesto de muelle NO incluido — pago directo en efectivo al abordar.",
+      "Propina para tripulación NO incluida — se agradece el gesto.",
+      "Por mal clima se reprograma sin costo.",
+      "Se requiere identificación oficial al embarcar."
     ],
     "marina": {
-      "name": "Marina Kaybal",
-      "addr": "Blvd Kukulcán km 3.5, Zona Hotelera, Cancún, Q.R."
+      "name": "Marina Zona Hotelera",
+      "addr": "Blvd. Kukulcán, Zona Hotelera, Cancún, Q.R."
     },
     "images": [
-      "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=1200&q=85",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
-      "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800&q=80"
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.43%20PM.jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.43%20PM%20(1).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.43%20PM%20(2).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.44%20PM.jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.44%20PM%20(1).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.44%20PM%20(2).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.44%20PM%20(3).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.44%20PM%20(4).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.45%20PM.jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.45%20PM%20(1).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.45%20PM%20(2).jpeg",
+      "img/yate2/WhatsApp%20Image%202026-04-07%20at%2010.25.45%20PM%20(3).jpeg"
     ],
     "seo": {
-      "title": "Renta Yate Azimut 100ft \"El Capricho\" Cancún | Ancla & Go",
-      "desc": "Renta el Yate El Capricho Azimut 100ft en Cancún. 20 pasajeros, 4 cabinas, diseño italiano, capitán y bebidas incluidos. Isla Mujeres. Desde $130,000 MXN.",
-      "keys": "renta yate azimut cancun, yate 100 pies cancun, azimut 100 cancun, yate lujo privado cancun"
+      "title": "Renta Yate Explorer Sea Ray 40ft Cancún | Ocean Majesty Cancún",
+      "desc": "Renta el Explorer Sea Ray 40ft en Cancún. 15 pasajeros (máx. 25), 2 camarotes, cocina, capitán y tripulación incluidos. 24 bebidas a bordo. Desde $12,000 MXN.",
+      "keys": "renta yate sea ray cancun, explorer cancun, yate 40 pies cancun, renta yate 15 personas cancun"
     }
   },
   {
@@ -236,14 +286,18 @@
     "model": "Fairline 68ft",
     "type": "sunset",
     "eyebrow": "Romántico · Atardecer · Cancún",
-    "tagline": "La experiencia más romántica del Caribe mexicano. Vino espumoso, carnes frías y el sol hundiéndose en el horizonte desde la cubierta de un yate privado. Para dos o para doce, siempre mágico.",
+    "tagline": "La experiencia más romántica del Caribe mexicano, firmada por Ocean Majesty Cancún. Vino espumoso, carnes frías y el sol hundiéndose en el horizonte desde la cubierta de un yate privado. Para dos o para doce, siempre mágico.",
     "description": [
       "El Tour Atardecer a bordo del Fairline 68ft es la experiencia íntima por excelencia en Cancún. Diseñado para quienes buscan un momento especial sin la complejidad de una jornada completa.",
       "Durante 2 horas navegarás por la Laguna Nichupté y la bahía de Cancún mientras el cielo se tiñe de naranja y rosa. El paquete incluye vino espumoso de bienvenida, selección de carnes frías y quesos, y toda la atención de nuestra tripulación.",
       "Perfecto para propuestas de matrimonio, aniversarios, sorpresas románticas o simplemente despedir el día de la manera más memorable posible. El yate sale exactamente 2 horas antes del atardecer para garantizar la mejor luz."
     ],
     "specs": [
-      { "icon": "fa-solid fa-ruler-horizontal", "val": "68 ft", "lbl": "Eslora" },
+      {
+        "icon": "fa-solid fa-ruler-horizontal",
+        "val": "68 ft",
+        "lbl": "Eslora"
+      },
       { "icon": "fa-solid fa-users", "val": "12", "lbl": "Pasajeros" },
       { "icon": "fa-solid fa-bed", "val": "2", "lbl": "Cabinas" },
       { "icon": "fa-solid fa-shower", "val": "2", "lbl": "Baños" },
@@ -253,8 +307,14 @@
       { "icon": "fa-solid fa-snowflake", "val": "A/C", "lbl": "Clima" }
     ],
     "includes": [
-      { "ico": "fa-solid fa-champagne-glasses", "txt": "Vino espumoso de bienvenida" },
-      { "ico": "fa-solid fa-drumstick-bite", "txt": "Tabla de carnes frías y quesos" },
+      {
+        "ico": "fa-solid fa-champagne-glasses",
+        "txt": "Vino espumoso de bienvenida"
+      },
+      {
+        "ico": "fa-solid fa-drumstick-bite",
+        "txt": "Tabla de carnes frías y quesos"
+      },
       { "ico": "fa-solid fa-user-tie", "txt": "Capitán certificado" },
       { "ico": "fa-solid fa-people-group", "txt": "Tripulación de 2 personas" },
       { "ico": "fa-solid fa-droplet", "txt": "Agua y refrescos" },
@@ -330,7 +390,7 @@
       "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=800&q=80"
     ],
     "seo": {
-      "title": "Tour Atardecer en Yate Cancún – Fairline 68ft | Ancla & Go",
+      "title": "Tour Atardecer en Yate Cancún – Fairline 68ft | Ocean Majesty Cancún",
       "desc": "Tour atardecer en yate privado en Cancún. Fairline 68ft, 12 pasajeros, vino espumoso y carnes frías incluidos. Romántico y exclusivo. Desde $5,800 MXN por 2 horas.",
       "keys": "tour atardecer yate cancun, yate atardecer cancun romantico, sunset cruise cancun privado, renta yate 2 horas cancun"
     }
@@ -342,14 +402,18 @@
     "model": "Choy Lee 85ft",
     "type": "group",
     "eyebrow": "Grupos · Eventos · Cancún",
-    "tagline": "Cuando el grupo es grande, la experiencia tiene que estar a la altura. El Choy Lee 85ft «A New Beginning» es la opción definitiva para eventos, fiestas y celebraciones en alta mar con hasta 50 personas.",
+    "tagline": "Cuando el grupo es grande, la experiencia tiene que estar a la altura. Ocean Majesty Cancún presenta el Choy Lee 85ft «A New Beginning» — la opción definitiva para eventos, fiestas y celebraciones en alta mar con hasta 50 personas.",
     "description": [
       "El Choy Lee 85ft «A New Beginning» redefine la experiencia de grupo en el mar. Con su amplia cubierta principal, zona de sombra techada, y espacio para bailar, este yate convierte cualquier reunión en una fiesta épica sobre el Caribe.",
       "Capacidad para 50 pasajeros, 4 cabinas con baño privado, cocina industrial para servicio de catering, y un sistema de sonido profesional que hace que la música suene perfecta en cada rincón del barco.",
       "Ya sea una despedida de soltero/a, una reunión corporativa, un cumpleaños de ensueño o una boda en el mar — este yate tiene el espacio, la infraestructura y la tripulación para que todo salga perfecto."
     ],
     "specs": [
-      { "icon": "fa-solid fa-ruler-horizontal", "val": "85 ft", "lbl": "Eslora" },
+      {
+        "icon": "fa-solid fa-ruler-horizontal",
+        "val": "85 ft",
+        "lbl": "Eslora"
+      },
       { "icon": "fa-solid fa-users", "val": "50", "lbl": "Pasajeros" },
       { "icon": "fa-solid fa-bed", "val": "4", "lbl": "Cabinas" },
       { "icon": "fa-solid fa-shower", "val": "4", "lbl": "Baños" },
@@ -446,7 +510,7 @@
       "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=800&q=80"
     ],
     "seo": {
-      "title": "Renta Yate Grupos Cancún – Choy Lee 85ft \"A New Beginning\" | Ancla & Go",
+      "title": "Renta Yate Grupos Cancún – Choy Lee 85ft \"A New Beginning\" | Ocean Majesty Cancún",
       "desc": "Renta yate para grupos en Cancún hasta 50 personas. Choy Lee 85ft con DJ, catering y coordinador de evento. Despedidas, cumpleaños y bodas en el mar. Cotiza gratis.",
       "keys": "renta yate grupos cancun, yate fiesta cancun, yate 50 personas cancun, despedida soltero yate cancun, boda yate cancun"
     }

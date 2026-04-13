@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>
-      Ancla & Go | Renta de Yates en Cancún – Privado · Lujo · Todo Incluido
+      Ocean Majesty Cancún | Renta de Yates Privados – Lujo · Caribbean · Todo
+      Incluido
     </title>
     <meta
       name="description"
-      content="Renta yates privados en Cancún desde $5,800 MXN. Fairline 68ft, Azimut 100ft, Sunseeker 120ft. Capitán, bebidas y snorkel incluidos. Reserva por WhatsApp en minutos."
+      content="Ocean Majesty Cancún — Renta de yates privados en Cancún desde $5,800 MXN. Sea Ray 40ft, Fairline 68ft, Choy Lee 85ft. Capitán, bebidas y snorkel incluidos. Reserva por WhatsApp."
     />
     <meta
       name="keywords"
-      content="renta de yates cancun, yates cancun, alquiler yate cancun privado, yate isla mujeres, charter yate cancun, yates de lujo cancun, renta barco cancun zona hotelera"
+      content="ocean majesty cancun, renta de yates cancun, yates privados cancun, luxury yacht rental cancun, alquiler yate cancun, yacht charter cancun, yate isla mujeres, private boat cancun, renta yate zona hotelera cancun"
     />
-    <link rel="canonical" href="https://anclaandgo.com/" />
+    <link rel="canonical" href="https://oceanmajestycancun.com/" />
     <meta
       property="og:title"
-      content="Ancla & Go | Renta de Yates Privados en Cancún"
+      content="Ocean Majesty Cancún | Renta de Yates Privados en Cancún"
     />
     <meta
       property="og:description"
@@ -29,9 +30,13 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Ancla & Go",
-        "description": "Renta de yates privados en Cancún con capitán, bebidas y snorkel incluidos.",
-        "url": "https://anclaandgo.com",
+        "name": "Ocean Majesty Cancún",
+        "description": "Renta de yates privados de lujo en Cancún. Ocean Majesty Cancún ofrece experiencias náuticas exclusivas con capitán, tripulación y todo incluido.",
+        "url": "https://oceanmajestycancun.com",
+        "sameAs": [
+          "https://instagram.com/oceanmajestycancun",
+          "https://tiktok.com/@oceanmajestycancun"
+        ],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Cancún",
@@ -60,7 +65,7 @@
             "name": "¿Cuánto cuesta rentar un yate en Cancún?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Desde $5,800 MXN tours de 2 horas hasta $360,000 MXN jornadas completas."
+              "text": "Desde $5,800 MXN el tour de atardecer de 2 horas hasta $17,000 MXN por jornada completa de 8 horas. El yate de grupos Choy Lee 85ft se cotiza según el evento."
             }
           },
           {
@@ -77,7 +82,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Raleway:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -95,25 +100,36 @@
         padding: 0;
       }
       :root {
+        /* ── OCEAN MAJESTY BRAND COLORS ── */
+        --ocean: #0d3352;
+        --aqua: #1a9fc7;
+        --aqua-pale: rgba(26, 159, 199, 0.08);
+        --aqua-ring: rgba(26, 159, 199, 0.18);
+        --aqua-mid: rgba(26, 159, 199, 0.35);
+        --wave: #2c7fb4;
+
+        /* ── NEUTROS ── */
         --white: #ffffff;
-        --off: #f7f6f3;
-        --border: #e6e4de;
-        --text: #0e0e0e;
-        --muted: #6a6a6a;
-        --hint: #ababab;
-        --ocean: #093655;
-        --aqua: #0fa3c7;
-        --aqua-pale: rgba(15, 163, 199, 0.08);
-        --aqua-ring: rgba(15, 163, 199, 0.18);
-        --sand: #c4922f;
-        --sand-pale: #fdf5e4;
-        --serif: "Instrument Serif", Georgia, serif;
-        --sans: "DM Sans", system-ui, sans-serif;
-        --r-card: 20px;
+        --off: #f4f7fa;
+        --border: #dde5ec;
+        --text: #0e1923;
+        --muted: #5a7080;
+        --hint: #96aab5;
+
+        /* ── ACENTO SECUNDARIO ── */
+        --gold: #c4922f;
+        --gold-pale: #fdf5e4;
+
+        /* ── TIPOGRAFÍA ── */
+        --display: "Montserrat", system-ui, sans-serif;
+        --sans: "Raleway", system-ui, sans-serif;
+
+        /* ── LAYOUT ── */
+        --r-card: 16px;
         --r-pill: 100px;
-        --r-sm: 10px;
-        --shadow-card: 0 2px 12px rgba(9, 54, 85, 0.06);
-        --shadow-hover: 0 20px 54px rgba(9, 54, 85, 0.13);
+        --r-sm: 8px;
+        --shadow-card: 0 2px 16px rgba(13, 51, 82, 0.08);
+        --shadow-hover: 0 20px 54px rgba(13, 51, 82, 0.18);
       }
       html {
         scroll-behavior: smooth;
@@ -144,7 +160,7 @@
 
       /* ── UTILS ── */
       .serif {
-        font-family: var(--serif);
+        font-family: var(--display);
       }
       .reveal {
         opacity: 0;
@@ -211,18 +227,39 @@
           border-bottom 0.35s;
       }
       .nav.solid {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(244, 247, 250, 0.96);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--border);
       }
       .nav-logo {
-        font-family: var(--serif);
-        font-size: 1.45rem;
+        font-family: var(--display);
+        font-size: 1.1rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
         text-decoration: none;
         color: var(--text);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .nav-logo img {
+        height: 50px;
+        width: auto;
+        display: block;
+        transition: opacity 0.2s;
+      }
+      .nav-logo .logo-dark {
+        display: none;
+      }
+      .nav.solid .nav-logo .logo-light {
+        display: none;
+      }
+      .nav.solid .nav-logo .logo-dark {
+        display: block;
       }
       .nav-logo span {
         color: var(--aqua);
+        font-weight: 900;
       }
       .nav-links {
         display: flex;
@@ -231,11 +268,17 @@
       }
       .nav-links a {
         font-size: 0.82rem;
-        color: var(--muted);
+        color: rgba(255, 255, 255, 0.85);
         text-decoration: none;
         transition: color 0.2s;
       }
       .nav-links a:hover {
+        color: white;
+      }
+      .nav.solid .nav-links a {
+        color: var(--ocean);
+      }
+      .nav.solid .nav-links a:hover {
         color: var(--text);
       }
       .nav-cta {
@@ -288,7 +331,7 @@
       }
       .nav-drawer a {
         font-size: 1.3rem;
-        font-family: var(--serif);
+        font-family: var(--display);
         color: var(--text);
         text-decoration: none;
         border-bottom: 1px solid var(--border);
@@ -392,16 +435,16 @@
         padding: 7rem 2.5rem 4rem;
         overflow: hidden;
         position: relative;
-        background: url('img/luxury-big-yacht-stay-sea-around-island-background-sky.jpg')
+        background: url("img/luxury-big-yacht-stay-sea-around-island-background-sky.jpg")
           center / cover no-repeat;
       }
       .hero::before {
-        content: '';
+        content: "";
         position: absolute;
         inset: 0;
         background: linear-gradient(
           135deg,
-          rgba(9, 54, 85, 0.82) 0%,
+          rgba(13, 51, 82, 0.82) 0%,
           rgba(4, 20, 35, 0.72) 100%
         );
         z-index: 0;
@@ -428,7 +471,7 @@
         animation: fadeUp 0.7s 0.1s forwards;
       }
       .hero-eyebrow::before {
-        content: '';
+        content: "";
         width: 6px;
         height: 6px;
         border-radius: 50%;
@@ -436,9 +479,9 @@
         flex-shrink: 0;
       }
       .hero-h1 {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: clamp(2.9rem, 5.2vw, 4.8rem);
-        font-weight: 400;
+        font-weight: 900;
         line-height: 1.07;
         letter-spacing: -0.02em;
         margin-bottom: 1.5rem;
@@ -449,6 +492,7 @@
       .hero-h1 em {
         font-style: italic;
         color: var(--aqua);
+        font-weight: 700;
       }
       .hero-desc {
         font-size: 1rem;
@@ -487,8 +531,9 @@
         animation: fadeUp 0.7s 0.7s forwards;
       }
       .trust-num {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.6rem;
+        font-weight: 700;
         display: block;
         line-height: 1;
         color: white;
@@ -514,7 +559,7 @@
         border-radius: 24px;
         overflow: hidden;
         position: relative;
-        box-shadow: 0 30px 80px rgba(9, 54, 85, 0.18);
+        box-shadow: 0 30px 80px rgba(13, 51, 82, 0.18);
       }
       .hero-img-wrap img {
         width: 100%;
@@ -527,8 +572,8 @@
         inset: 0;
         background: linear-gradient(
           to bottom,
-          rgba(9, 54, 85, 0.06) 0%,
-          rgba(9, 54, 85, 0.55) 100%
+          rgba(13, 51, 82, 0.06) 0%,
+          rgba(13, 51, 82, 0.55) 100%
         );
       }
       .hero-img-badge {
@@ -563,7 +608,7 @@
         margin-bottom: 3px;
       }
       .hero-img-tag .val {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.05rem;
       }
 
@@ -580,9 +625,9 @@
         margin-bottom: 0.75rem;
       }
       .sec-h2 {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: clamp(1.85rem, 3.5vw, 2.9rem);
-        font-weight: 400;
+        font-weight: 700;
         line-height: 1.15;
         letter-spacing: -0.015em;
         margin-bottom: 0.75rem;
@@ -687,7 +732,7 @@
         inset: 0;
         background: linear-gradient(
           to top,
-          rgba(9, 54, 85, 0.58) 0%,
+          rgba(13, 51, 82, 0.58) 0%,
           transparent 55%
         );
         opacity: 0.72;
@@ -776,7 +821,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(9, 54, 85, 0.15);
+        background: rgba(13, 51, 82, 0.15);
         backdrop-filter: blur(3px);
         opacity: 0;
         transition: opacity 0.3s;
@@ -795,7 +840,7 @@
         padding: 0.7rem 1.5rem;
         border-radius: var(--r-pill);
         text-decoration: none;
-        box-shadow: 0 8px 24px rgba(15, 163, 199, 0.38);
+        box-shadow: 0 8px 24px rgba(26, 159, 199, 0.38);
         transform: translateY(6px);
         transition: transform 0.3s;
       }
@@ -825,9 +870,9 @@
         color: var(--aqua);
       }
       .card-name {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.28rem;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 1.2;
         color: var(--text);
       }
@@ -883,9 +928,9 @@
         margin-top: auto;
       }
       .card-price-val {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 700;
         display: block;
         line-height: 1;
       }
@@ -928,7 +973,7 @@
         border-radius: 50%;
         background: var(--aqua-pale);
         color: var(--ocean);
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.1rem;
         display: flex;
         align-items: center;
@@ -937,9 +982,9 @@
         border: 1px solid var(--aqua-ring);
       }
       .how-card h3 {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.05rem;
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 0.5rem;
       }
       .how-card p {
@@ -978,9 +1023,9 @@
         color: var(--aqua);
       }
       .exp-card h3 {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.05rem;
-        font-weight: 400;
+        font-weight: 600;
         margin-bottom: 0.5rem;
       }
       .exp-card p {
@@ -1050,10 +1095,10 @@
         padding: 1.1rem 1.25rem;
       }
       .dest-name {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: 1.2rem;
         color: white;
-        font-weight: 400;
+        font-weight: 700;
       }
       .dest-sub {
         font-size: 0.68rem;
@@ -1083,10 +1128,10 @@
       }
       .testi-card:hover {
         transform: translateY(-3px);
-        box-shadow: 0 12px 36px rgba(9, 54, 85, 0.09);
+        box-shadow: 0 12px 36px rgba(13, 51, 82, 0.09);
       }
       .stars {
-        color: var(--sand);
+        color: var(--gold);
         font-size: 0.8rem;
         letter-spacing: 0.12em;
         margin-bottom: 0.85rem;
@@ -1176,9 +1221,9 @@
         transition: color 0.25s;
       }
       .faq-item-q {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: clamp(1.1rem, 2vw, 1.45rem);
-        font-weight: 400;
+        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.01em;
         line-height: 1.1;
@@ -1214,9 +1259,9 @@
         margin-bottom: 1rem;
       }
       .cta-h2 {
-        font-family: var(--serif);
+        font-family: var(--display);
         font-size: clamp(2rem, 4vw, 3.4rem);
-        font-weight: 400;
+        font-weight: 900;
         color: white;
         line-height: 1.15;
         margin-bottom: 0.75rem;
@@ -1279,7 +1324,7 @@
 
       /* ── FOOTER ── */
       footer {
-        background: #090909;
+        background: #070e14;
         padding: 4rem 2.5rem 2rem;
       }
       .footer-grid {
@@ -1289,8 +1334,10 @@
         margin-bottom: 3rem;
       }
       .f-logo {
-        font-family: var(--serif);
-        font-size: 1.3rem;
+        font-family: var(--display);
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
         color: white;
         display: block;
         margin-bottom: 0.85rem;
@@ -1460,7 +1507,7 @@
     <!-- WA FAB -->
     <a
       class="wa-fab"
-      href="https://wa.me/529981234567?text=Hola!%20Me%20interesa%20rentar%20un%20yate%20en%20Cancún"
+      href="https://wa.me/529904006725?text=Hola!%20Me%20interesa%20rentar%20un%20yate%20con%20Ocean%20Majesty%20Canc%C3%BAn"
       target="_blank"
       rel="noopener"
       aria-label="WhatsApp"
@@ -1479,7 +1526,15 @@
       role="navigation"
       aria-label="Navegación principal"
     >
-      <a href="#" class="nav-logo">Ancla <span>&</span> Go</a>
+      <a href="index.html" class="nav-logo"
+        ><img
+          class="logo-light"
+          src="img/logo copiaW.png"
+          alt="Ocean Majesty Cancún" /><img
+          class="logo-dark"
+          src="img/logo copia.png"
+          alt="Ocean Majesty Cancún"
+      /></a>
       <ul class="nav-links">
         <li><a href="#flota">Flota</a></li>
         <li><a href="#como">Cómo funciona</a></li>
@@ -1488,7 +1543,7 @@
       </ul>
       <a
         class="nav-cta"
-        href="https://wa.me/529981234567?text=Hola!%20Quiero%20información%20sobre%20yates%20en%20Cancún"
+        href="https://wa.me/529904006725?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20los%20yates%20de%20Ocean%20Majesty%20Canc%C3%BAn"
         target="_blank"
         rel="noopener"
       >
@@ -1521,7 +1576,7 @@
       <a href="#destinos">Destinos</a>
       <a href="#faq">FAQ</a>
       <a
-        href="https://wa.me/529981234567?text=Hola!%20Quiero%20información%20sobre%20yates"
+        href="https://wa.me/529904006725?text=Hola!%20Quiero%20información%20sobre%20yates"
         target="_blank"
         rel="noopener"
         style="color: var(--aqua)"
@@ -1538,12 +1593,12 @@
       <div>
         <div class="hero-eyebrow">Cancún · Isla Mujeres · Riviera Maya</div>
         <h1 class="hero-h1">
-          El Caribe es tuyo.<br /><em>Zarpa cuando quieras.</em>
+          Navega el Caribe<br /><em>en tu propio yate.</em>
         </h1>
         <p class="hero-desc">
-          Yates privados con capitán, tripulación y todo incluido. Reserva en
-          minutos por WhatsApp y vive una experiencia que no encontrarás en
-          ningún hotel.
+          Ocean Majesty Cancún — yates privados de lujo con capitán, tripulación
+          y todo incluido. Reserva en minutos por WhatsApp y vive el Caribe como
+          mereces.
         </p>
         <div class="hero-actions">
           <a class="btn-primary" href="#flota"
@@ -1579,6 +1634,31 @@
             ><span class="trust-lbl">Reserva</span>
           </div>
         </div>
+      </div>
+      <!-- Wave watermark decorative element -->
+      <div
+        style="
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 80px;
+          overflow: hidden;
+          pointer-events: none;
+          z-index: 0;
+          opacity: 0.06;
+        "
+      >
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          style="width: 100%; height: 100%"
+        >
+          <path
+            d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
+            fill="#1a9fc7"
+          />
+        </svg>
       </div>
       <div class="hero-img-side">
         <div class="hero-img-wrap">
@@ -1621,7 +1701,7 @@
       <div style="text-align: center; margin-top: 2.5rem">
         <a
           class="btn-outline"
-          href="https://wa.me/529981234567?text=Hola!%20Quisiera%20ver%20más%20opciones%20de%20yates%20disponibles%20en%20Cancún"
+          href="https://wa.me/529904006725?text=Hola!%20Quisiera%20ver%20más%20opciones%20de%20yates%20disponibles%20en%20Cancún"
           target="_blank"
           rel="noopener"
           >Ver toda la flota →</a
@@ -1845,7 +1925,9 @@
             </div>
             <div>
               <span class="author-name" itemprop="author">Mario González</span
-              ><span class="author-sub">Tour Isla Mujeres · Fairline 65</span>
+              ><span class="author-sub"
+                >Ocean Majesty · Tour Isla Mujeres · Fairline 65</span
+              >
             </div>
           </div>
         </div>
@@ -1870,7 +1952,9 @@
             </div>
             <div>
               <span class="author-name" itemprop="author">Janet Torres</span
-              ><span class="author-sub">Despedida de soltera · Sea Ray 50</span>
+              ><span class="author-sub"
+                >Ocean Majesty · Despedida de soltera · Sea Ray 50</span
+              >
             </div>
           </div>
         </div>
@@ -1895,7 +1979,9 @@
             </div>
             <div>
               <span class="author-name" itemprop="author">Daniel Castillo</span
-              ><span class="author-sub">Evento corporativo · Azimut 100ft</span>
+              ><span class="author-sub"
+                >Ocean Majesty · Evento corporativo · A New Beginning 85ft</span
+              >
             </div>
           </div>
         </div>
@@ -1921,7 +2007,7 @@
           </p>
           <a
             class="btn-primary"
-            href="https://wa.me/529981234567?text=Hola!%20Tengo%20una%20pregunta%20sobre%20renta%20de%20yates%20en%20Cancún"
+            href="https://wa.me/529904006725?text=Hola!%20Tengo%20una%20pregunta%20sobre%20renta%20de%20yates%20en%20Cancún"
             target="_blank"
             rel="noopener"
           >
@@ -1978,10 +2064,9 @@
               itemprop="acceptedAnswer"
             >
               <span itemprop="text"
-                >Desde $5,800 MXN para un tour de atardecer de 2 horas hasta
-                $360,000 MXN por jornadas completas en yates de 120 pies.
-                Tenemos opciones para todos los presupuestos y tamaños de
-                grupo.</span
+                >Desde $5,800 MXN para el tour de atardecer de 2 horas hasta
+                $17,000 MXN por jornadas completas de 8 horas. El Choy Lee 85ft
+                para grupos y eventos se cotiza según la ocasión.</span
               >
             </div>
           </div>
@@ -2138,19 +2223,19 @@
 
     <!-- ── CTA ── -->
     <section id="cta" aria-label="Reserva tu yate en Cancún ahora">
-      <div class="cta-eye">¿Listo para zarpar?</div>
-      <h2 class="cta-h2">El Caribe te está<br /><em>esperando hoy</em></h2>
+      <div class="cta-eye">Ocean Majesty Cancún</div>
+      <h2 class="cta-h2">Tu yate privado<br /><em>te espera hoy</em></h2>
       <p class="cta-p">
-        Contáctanos y ten tu yate reservado en menos de 5 minutos
+        Escríbenos y en menos de 5 minutos tienes tu experiencia lista
       </p>
       <div class="cta-btns">
         <a
           class="btn-white"
-          href="https://wa.me/529981234567?text=Hola!%20Quiero%20reservar%20un%20yate%20en%20Cancún.%20¿Qué%20opciones%20tienen%20disponibles?"
+          href="https://wa.me/529904006725?text=Hola!%20Quiero%20reservar%20un%20yate%20en%20Cancún.%20¿Qué%20opciones%20tienen%20disponibles?"
           target="_blank"
           rel="noopener"
         >
-          <svg width="15" height="15" fill="#093655" viewBox="0 0 24 24">
+          <svg width="15" height="15" fill="#0d3352" viewBox="0 0 24 24">
             <path
               d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
             />
@@ -2165,11 +2250,11 @@
     <footer role="contentinfo">
       <div class="footer-grid">
         <div class="footer-brand">
-          <span class="f-logo">Ancla <span>&</span> Go</span>
+          <span class="f-logo">OCEAN <span>MAJESTY</span></span>
           <p>
-            La forma más elegante de vivir el Caribe mexicano. Yates privados de
-            lujo en Cancún, Isla Mujeres y Riviera Maya. Reservas 24/7 por
-            WhatsApp.
+            Ocean Majesty Cancún — la experiencia náutica más exclusiva del
+            Caribe mexicano. Yates privados de lujo en Cancún, Isla Mujeres y
+            Riviera Maya. Reservas por WhatsApp 24/7.
           </p>
           <div class="f-socials">
             <a class="f-soc" href="#" aria-label="Instagram">IG</a>
@@ -2199,19 +2284,21 @@
           <h4>Contacto</h4>
           <ul>
             <li>
-              <a href="https://wa.me/529981234567" target="_blank">WhatsApp</a>
+              <a href="https://wa.me/529904006725" target="_blank">WhatsApp</a>
             </li>
             <li><a href="#faq">Preguntas frecuentes</a></li>
             <li><a href="#como">Cómo funciona</a></li>
             <li>
-              <a href="mailto:hola@anclaandgo.com">hola@anclaandgo.com</a>
+              <a href="mailto:hola@oceanmajestycancun.com"
+                >hola@oceanmajestycancun.com</a
+              >
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Ancla &amp; Go · Cancún, Quintana Roo, México</span>
-        <span>Renta de yates privados · Zona Hotelera · Isla Mujeres</span>
+        <span>© 2026 Ocean Majesty Cancún · Quintana Roo, México</span>
+        <span>Private Yacht Rentals · Zona Hotelera · Isla Mujeres</span>
       </div>
     </footer>
 
@@ -2297,7 +2384,7 @@
       }
 
       /* ── FLEET CARDS ── */
-      const WA = "529981234567";
+      const WA = "529904006725";
       const waLink = (msg) =>
         `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 
